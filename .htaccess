@@ -1,45 +1,320 @@
-# Kirby .htaccess
+# ##############################################################################
+# # INTERNET EXPLORER                                                          #
+# ##############################################################################
 
-# rewrite rules
-<IfModule mod_rewrite.c>
+# ------------------------------------------------------------------------------
+# | Better website experience                                                  |
+# ------------------------------------------------------------------------------
 
-# enable awesome urls. i.e.:
-# http://yourdomain.com/about-us/team
-RewriteEngine on
+# Force Internet Explorer to render pages in the highest available
+# mode in the various cases when it may not.
+# https://hsivonen.fi/doctype/#ie8
 
-# make sure to set the RewriteBase correctly
-# if you are running the site in a subfolder.
-# Otherwise links or the entire site will break.
-#
-# If your homepage is http://yourdomain.com/mysite
-# Set the RewriteBase to:
-#
-# RewriteBase /mysite
+<IfModule mod_headers.c>
+    Header set X-UA-Compatible "IE=edge"
+    # `mod_headers` cannot match based on the content-type, however, this header
+    # should be send only for HTML documents and not for the other resources
+    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff2?|xml|xpi)$">
+        Header unset X-UA-Compatible
+    </FilesMatch>
+</IfModule>
 
-# block text files in the content folder from being accessed directly
-RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
+# ##############################################################################
+# # MEDIA TYPES AND CHARACTER ENCODINGS                                        #
+# ##############################################################################
 
-# block all files in the site folder from being accessed directly
-RewriteRule ^site/(.*) error [R=301,L]
+# ------------------------------------------------------------------------------
+# | Media types                                                                |
+# ------------------------------------------------------------------------------
 
-# block all files in the kirby folder from being accessed directly
-RewriteRule ^kirby/(.*) error [R=301,L]
+# Serve resources with the proper media types (formerly known as MIME types).
+# http://www.iana.org/assignments/media-types/media-types.xhtml
 
-# make panel links work
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^panel/(.*) panel/index.php [L]
+<IfModule mod_mime.c>
 
-# make site links work
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*) index.php [L]
+  # Audio
+    AddType audio/mp4                                   f4a f4b m4a
+    AddType audio/ogg                                   oga ogg opus
+
+  # JavaScript
+    # Normalize to standard type.
+    # http://tools.ietf.org/html/rfc4329#section-7.2
+    AddType application/javascript                      js
+
+  # Video
+    AddType video/mp4                                   f4v f4p m4v mp4
+    AddType video/ogg                                   ogv
+    AddType video/webm                                  webm
+    AddType video/x-flv                                 flv
+
+  # Web fonts
+    AddType application/font-woff                       woff
+    AddType application/font-woff2                      woff2
+    AddType application/vnd.ms-fontobject               eot
+
+    # Browsers usually ignore the font media types and simply sniff
+    # the bytes to figure out the font type.
+    # http://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
+
+    # Chrome however, shows a warning if any other media types are used
+    # for the following two font types.
+
+    AddType application/x-font-ttf                      ttc ttf
+    AddType font/opentype                               otf
+
+    AddType image/svg+xml                               svg svgz
+
+  # Other
+    AddType application/xml                             atom rdf rss xml
+    AddType image/x-icon                                cur ico
 
 </IfModule>
 
-# Additional recommended values
-# Remove comments for those you want to use.
-#
+# ------------------------------------------------------------------------------
+# | Character encodings                                                        |
+# ------------------------------------------------------------------------------
+
+# Set `UTF-8` as the character encoding for all resources served with
+# the media type of `text/html` or `text/plain`.
+AddDefaultCharset utf-8
+
+# Set `UTF-8` as the character encoding for other certain resources.
+<IfModule mod_mime.c>
+    AddCharset utf-8 .css \
+                     .js \
+                     .rss \
+                     .xml
+</IfModule>
+
+# ##############################################################################
+# # SECURITY                                                                   #
+# ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | File access                                                                |
+# ------------------------------------------------------------------------------
+
+# Block access to directories without a default document.
+
+# You should leave the following uncommented, as you shouldn't allow anyone to
+# surf through every directory on your server (which may includes rather private
+# places such as the CMS's directories).
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Block access to all hidden files and directories with the exception of the
+# visible content from within the `/.well-known/` hidden directory.
+
+# These types of files usually contain user preferences or the preserved state
+# of an utility, and can include rather private places like, for example, the
+# `.git` or `.svn` directories.
+
+# The `/.well-known/` directory represents the standard (RFC 5785) path prefix
+# for "well-known locations" (e.g.: `/.well-known/manifest.json`,
+# `/.well-known/keybase.txt`), and therefore, access to its visible content
+# should not be blocked.
+
+# https://www.mnot.net/blog/2010/04/07/well-known
+# http://tools.ietf.org/html/rfc5785
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Block access to files that can expose sensitive information.
+
+# By default, block access to backup and source files that may be left by some
+# text editors and can pose a security risk when anyone has access to them.
+# http://feross.org/cmsploit/
+
+# IMPORTANT: Update the `<FilesMatch>` regular expression from below to include
+# any files that might end up on your production server and can expose sensitive
+# information about your website. These files may include: configuration files,
+# files that contain metadata about the project (e.g.: project dependencies),
+# build scripts, etc..
+
+<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
+
+    # Apache < 2.3
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+        Satisfy All
+    </IfModule>
+
+    # Apache ≥ 2.3
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+
+</FilesMatch>
+
+# ##############################################################################
+# # WEB PERFORMANCE                                                            #
+# ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | Compression                                                                |
+# ------------------------------------------------------------------------------
+
+<IfModule mod_deflate.c>
+
+    # Force compression for mangled headers.
+    # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
+
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    # Compress all output labeled with one of the following media types.
+
+    # IMPORTANT: For Apache versions below 2.3.7 you don't need to enable
+    # `mod_filter` and can remove the `<IfModule mod_filter.c>` & `</IfModule>`
+    # lines as `AddOutputFilterByType` is still in the core directives.
+
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                      "application/javascript" \
+                                      "application/rss+xml" \
+                                      "application/vnd.ms-fontobject" \
+                                      "application/x-font-ttf" \
+                                      "application/xhtml+xml" \
+                                      "application/xml" \
+                                      "font/opentype" \
+                                      "image/svg+xml" \
+                                      "image/x-icon" \
+                                      "text/cache-manifest" \
+                                      "text/css" \
+                                      "text/html" \
+                                      "text/plain" \
+                                      "text/vtt" \
+                                      "text/xml"
+    </IfModule>
+
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | ETags                                                                      |
+# ------------------------------------------------------------------------------
+
+# Remove `ETags` as resources are sent with far-future expires headers.
+# https://developer.yahoo.com/performance/rules.html#etags
+
+# `FileETag None` doesn't work in all cases.
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
+# ------------------------------------------------------------------------------
+# | Expires headers                                                            |
+# ------------------------------------------------------------------------------
+
+# Serve resources with far-future expires headers.
+
+# IMPORTANT: If you don't control versioning with filename-based cache
+# busting, consider lowering the cache times to something like one week.
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 month"
+
+  # CSS
+    ExpiresByType text/css                              "access plus 1 year"
+
+  # Favicon (cannot be renamed!) and cursor images
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+  # JavaScript
+    ExpiresByType application/javascript                "access plus 1 year"
+
+  # Media
+    ExpiresByType audio/ogg                             "access plus 1 month"
+    ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType video/mp4                             "access plus 1 month"
+    ExpiresByType video/ogg                             "access plus 1 month"
+    ExpiresByType video/webm                            "access plus 1 month"
+
+  # Web feeds
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+  # Web fonts
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | Filename-based cache busting                                               |
+# ------------------------------------------------------------------------------
+
+# If you're not using a build process to manage your filename version revving,
+# you might want to consider enabling the following directives to route all
+# requests such as `/css/style.12345.css` to `/css/style.css`.
+
+# To understand why this is important and a better idea than `*.css?v231`, read:
+# http://www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+)\.(@@timestamp|\d+)\.(min\.css|css|cur|gif|ico|jpe?g|min\.js|js|png|svgz?|webp)$ $1.$3 [L]
+</IfModule>
+
+# ##############################################################################
+# # KIRBY                                                                      #
+# ##############################################################################
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+    # RewriteBase /mysite
+
+    # block text files in the content folder from being accessed directly
+    RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
+
+    # block all files in the site folder from being accessed directly
+    RewriteRule ^site/(.*) error [R=301,L]
+
+    # block all files in the kirby folder from being accessed directly
+    RewriteRule ^kirby/(.*) error [R=301,L]
+
+    # make panel links work
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^panel/(.*) panel/index.php [L]
+
+    # make site links work
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*) index.php [L]
+
+</IfModule>
+
 # AddDefaultCharset UTF-8
-#
 # php_flag short_open_tag on

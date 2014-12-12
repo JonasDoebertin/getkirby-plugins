@@ -1,0 +1,13 @@
+/**
+ * $LINKS
+ */
+
+a {
+    text-decoration: none;
+    color: $base-link-color;
+    font-weight: 600;
+
+    @include attention() {
+        color: $base-link-attention-color;
+    }
+}

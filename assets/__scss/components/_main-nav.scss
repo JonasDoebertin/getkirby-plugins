@@ -1,0 +1,35 @@
+/**
+ * $MAIN NAV
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$main-nav-color:                 #ffffff;
+$main-nav-weight:                600;
+
+
+/**
+ * #MAIN NAV
+ */
+.main-nav {}
+
+    .main-nav__item a {
+        color: $main-nav-color;
+        text-decoration: none;
+        font-weight: $main-nav-weight;
+        @include font-size(20px);
+
+        @include attention() {
+            text-decoration: underline;
+        }
+
+    }
+
+    .main-nav__item--focus a {
+        background: $main-nav-color;
+        color: $header-section-background;
+        border-radius: 5px;
+        padding: 8px 12px;
+    }

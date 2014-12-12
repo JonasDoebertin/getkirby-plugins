@@ -1,0 +1,62 @@
+/**
+ * $ADD PLUGIN
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$addplugin-section-padding:     2 * $spacing-unit;
+$addplugin-section-background:  $introduction-section-background;
+$addplugin-text-color:          $introduction-text-color;
+$addplugin-text-color--bold:    $introduction-text-color--bold;
+
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--addplugin {
+    background-color: $addplugin-section-background;
+}
+
+.section--addplugin .section__wrap {
+    padding-top: $addplugin-section-padding;
+    padding-bottom: $addplugin-section-padding;
+}
+
+/**
+ * #ADD PLUGIN
+ */
+.addplugin {
+    text-align: center;
+}
+
+    .addplugin__title {
+        text-transform: uppercase;
+        color: $introduction-text-color--bold;
+        @include font-size(24px);
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    .addplugin__description {
+        //color: $addplugin-text-color;
+        @include font-size(20px);
+        font-weight: 300;
+    }
+
+    .addplugin__button {
+        background: $base-link-color;
+        box-shadow: 0px 5px 0px shade($base-link-color, 20%);
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: $base-box-round;
+        padding: ($spacing-unit / 2) $spacing-unit;
+        display: inline-block;
+        margin-bottom: 5px;
+
+        @include attention() {
+            background: tint($base-link-color, 10%);
+            box-shadow: 0px 5px 0px shade($base-link-color, 10%);
+        }
+    }

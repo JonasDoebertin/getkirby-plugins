@@ -1,0 +1,61 @@
+/**
+ * $INTRODUCTION
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$introduction-section-padding:         3 * $spacing-unit;
+$introduction-section-background:     #e9e6e1;
+$introduction-text-color:             #69767F;
+$introduction-text-color--bold:       $base-heading-color;
+
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--introduction {
+    background-color: $introduction-section-background;
+    box-shadow: inset 0px 5px 0px rgba(0, 0, 0, .1);
+}
+
+.section--introduction .section__wrap {
+    padding-top: $introduction-section-padding;
+    padding-bottom: $introduction-section-padding;
+    @extend %clearfix;
+}
+
+
+/**
+ * #INTRODUCTION
+ */
+.introduction {}
+
+    .introduction__text {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        @include font-size(32px);
+        color: $introduction-text-color;
+        font-weight: 300;
+    }
+
+        .introduction__text p {
+            margin: 0;
+        }
+
+        .introduction__text strong {
+            font-weight: 600;
+            color: $introduction-text-color--bold;
+        }
+
+        .introduction__text a {
+            color: $header-section-background;
+            font-weight: 600;
+            text-decoration: none;
+
+            @include attention() {
+                color: tint($header-section-background, 10%);
+            }
+        }

@@ -1,17 +1,9 @@
-Title: Kirby Starterkit
+Title: Kirby Plugins & Extensions
 
 ----
 
-Author: Bastian Allgeier GmbH
+Description: Searching for plugins & extensions to pimp up your Kirby 2 powered website? Look no further! We have everything listed.
 
 ----
 
-Description: This is Kirby's Starterkit.
-
-----
-
-Keywords: Kirby, CMS, file-based
-
-----
-
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: Made by <a href="http://jd-powered.net/" rel="author">»jd« powered</a> using <i class="footer__icon  icon--kirby"></i> and and a whole lot of <i class="footer__icon  icon--coffee"></i>.

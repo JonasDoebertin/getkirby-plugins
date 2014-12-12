@@ -1,0 +1,59 @@
+/**
+ * $FILTERS
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$filters-background:            #445467;
+$filters-background-shade:      #2c3e50;
+$filters-text-color:            #ffffff;
+$filters-vertical-padding:      $spacing-unit / 2;
+
+/**
+ * #FILTERS
+ */
+
+.filters {}
+
+    .filters__bar {
+        background: $filters-background;
+        border-radius: $base-box-round;
+        padding: 0 $spacing-unit;
+        color: $filters-text-color;
+
+        box-shadow: 0px 5px 0px $filters-background-shade;
+
+        @extend %clearfix;
+    }
+
+        .filters__title {
+            font-weight: 600;
+            float: left;
+            padding: $filters-vertical-padding 0;
+        }
+
+        .filters__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            float: right;
+        }
+
+            .filters__list li {
+                display: inline;
+            }
+
+                .filters__item {
+                    color: $filters-text-color;
+                    padding: $filters-vertical-padding 15px;
+                    display: inline-block;
+
+                    &:hover {
+                        background: $filters-background-shade;
+                        box-shadow: 0px 5px 0px shade($filters-background-shade, 20%);
+                    }
+
+                }

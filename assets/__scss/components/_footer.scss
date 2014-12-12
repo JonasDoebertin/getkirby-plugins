@@ -1,0 +1,62 @@
+/**
+ * $FOOTER
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$footer-background:             $base-heading-color;
+$footer-color:                  #ffffff;
+
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--footer {
+    background-color: $footer-background;
+}
+
+.section--footer .section__wrap {
+    @extend %clearfix;
+}
+
+
+/**
+ * #FOOTER
+ */
+.footer {
+    color: $footer-color;
+    @include font-size(14px);
+    @extend %clearfix;
+}
+
+    .footer__credits {
+        margin-bottom: 0;
+        float: left;
+    }
+
+        .footer__icon {
+            position: relative;
+            padding: 0 2px;
+
+            &.icon--kirby {
+                @include font-size(20px);
+                bottom: -4px;
+            }
+
+            &.icon--coffee {
+                @include font-size(18px);  // TODO: Find better coffee icon!
+                bottom: -2px;
+            }
+
+        }
+
+    .footer__legal {
+        margin-bottom: 0;
+        float: right;
+    }
+
+    .footer a {
+        color: $footer-color;
+    }

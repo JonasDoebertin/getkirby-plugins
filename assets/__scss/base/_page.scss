@@ -1,0 +1,20 @@
+/**
+ * $PAGE
+ */
+
+
+/**
+ * #BASE FONTS
+ */
+body {
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    color: $base-font-color;
+    background: $base-background-color;
+}
+
+
+/**
+ * #LAYOUT
+ */
+$max-section-width:             1200px;

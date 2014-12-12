@@ -1,0 +1,13 @@
+/**
+ * $SECTION
+ */
+
+.section {
+    width: 100%;
+}
+
+    .section__wrap {
+        max-width: $max-section-width;
+        margin: 0 auto;
+        padding: $spacing-unit;
+    }

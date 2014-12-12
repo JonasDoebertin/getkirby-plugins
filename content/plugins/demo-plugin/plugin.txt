@@ -1,9 +1,41 @@
-Name: 
+Subtitle: Flexible Related Pages
 
 ----
 
-Subtitle: 
+Title: RelatedPages
 
 ----
 
-Title: demo-plugin
+Description: The RelatedPages plugin provides an easy, but flexible way of incorporating links (or other data) of related pages to the current page. The relationship is considered by keywords in an arbitrary field of the content files.
+
+----
+
+Featured: true
+
+----
+
+Created: 2014-11-13
+
+----
+
+Type: general, panel
+
+----
+
+Authorname: Adspectus
+
+----
+
+Downloadtitle: Show on GitHub
+
+----
+
+Authorlink: https://github.com/Adspectus/
+
+----
+
+Downloadlink: https://github.com/Adspectus/Kirby-RelatedPages
+
+----
+
+Draft: false

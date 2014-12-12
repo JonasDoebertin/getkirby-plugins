@@ -7,3 +7,7 @@ Description: Searching for plugins & extensions to pimp up your Kirby 2 powered 
 ----
 
 Copyright: Made by <a href="http://jd-powered.net/" rel="author">»jd« powered</a> using <i class="footer__icon  icon--kirby"></i> and and a whole lot of <i class="footer__icon  icon--coffee"></i>.
+
+----
+
+Googleverification: LKO9Qm-i2XqqZZ21eAT6N7Yk1mLNjzKX0KzjjeS7USU

@@ -12,3 +12,6 @@ fields:
     copyright:
         label: Copyright
         type:  textarea
+    googleverification:
+        label: Google Site Verification Code
+        type: text

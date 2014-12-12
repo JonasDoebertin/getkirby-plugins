@@ -1,14 +1,20 @@
-  <footer class="footer cf" role="contentinfo">
 
-    <div class="copyright">
-      <?php echo $site->copyright()->kirbytext() ?>
-    </div>
+        <footer class="section  section--footer  footer">
+            <div class="section__wrap">
+                <p class="footer__credits">Made by <a href="http://jd-powered.net/" rel="author">&raquo;jd&laquo; powered</a> using <i class="footer__icon  icon--kirby"></i> and and a whole lot of <i class="footer__icon  icon--coffee"></i>.</p>
+                <p class="footer__legal">
+                    <a href="http://getkirby.com/forum/">Official Forums</a>
+                    <a href="http://getkirby.com/buy">Buy Kirby</a>
+                    <a href="http://jd-powered.net/contact">Imprint</a>
+                </p>
+            </div>
+        </footer>
 
-    <div class="colophon">
-      <a href="http://getkirby.com/made-with-kirby-and-love">Made with Kirby and <b>♥</b></a>
-    </div>
 
-  </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="assets/js/plugins.@@timestamp.min.js"></script>
+        <script src="assets/js/main.@@timestamp.min.js"></script>
 
-</body>
+    </body>
 </html>

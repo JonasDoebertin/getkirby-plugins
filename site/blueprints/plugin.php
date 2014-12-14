@@ -20,6 +20,7 @@ fields:
         label: Added
         type: date
         format: MM/DD/YYYY
+        default: today
         required: true
         width: 1/4
     subtitle:
@@ -33,8 +34,26 @@ fields:
         text: yes/no
         required: true
         width: 1/4
-
-
+    icon:
+        label: Icon
+        type: select
+        default: generic
+        options:
+            kirby: Kirby Logo
+            coffee: Coffee
+            image: Image
+            video: Video
+            location: Location
+            calendar: Calendar
+            quotes: Quotes
+            generic: Generic
+            heart: Heart
+            panel: Panel
+            formatting: Formatting
+            text: Text
+            tags: Tags
+            twitter: Twitter Logo
+        width: 1/4
     description:
         label: Description
         type:  textarea

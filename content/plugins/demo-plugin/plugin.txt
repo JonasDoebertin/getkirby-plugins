@@ -39,3 +39,7 @@ Downloadlink: https://github.com/Adspectus/Kirby-RelatedPages
 ----
 
 Draft: false
+
+----
+
+Icon: generic

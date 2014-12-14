@@ -34,6 +34,7 @@
     "retina.js": "~1.3",
     "html5shiv": "~3.7.2",
     "inuit-list-block": "~0.4.2",
-    "jQuery.dotdotdot": "~1.6.16"
+    "jQuery.dotdotdot": "~1.6.16",
+    "isotope": "~2.1.0"
   }
 }

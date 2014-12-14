@@ -12,4 +12,16 @@ jQuery(function($) {
         watch: 'window'
     });
 
+
+    /*
+        Initialize Isotope
+    */
+   var plugins = $('.js-isotope');
+
+   plugins.isotope({
+       itemSelector: '.js-isotope-item',
+       layoutMode: 'fitRows'
+   });
+
+
 });

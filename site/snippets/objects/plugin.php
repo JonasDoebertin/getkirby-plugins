@@ -1,6 +1,6 @@
 
-<article class="plugin <?= pluginclasses($plugin) ?>">
-    <i class="plugin__icon  icon--generic"></i>
+<article class="plugin  js-plugin  <?= pluginclasses($plugin) ?>">
+    <i class="plugin__icon  icon--<?= $plugin->icon()->html() ?>"></i>
     <h2 class="plugin__title"><?= $plugin->title()->html() ?></h2>
     <strong class="plugin__subtitle"><?= $plugin->subtitle()->html() ?></strong>
     <p class="plugin__description  js-plugin-description"><?= $plugin->description()->html() ?></p>

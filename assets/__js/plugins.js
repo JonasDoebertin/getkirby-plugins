@@ -15,3 +15,5 @@
  *	http://en.wikipedia.org/wiki/GNU_General_Public_License
  */
 //= include ../__vendor/jQuery.dotdotdot/src/js/jquery.dotdotdot.js
+
+//= include ../__vendor/isotope/dist/isotope.pkgd.js

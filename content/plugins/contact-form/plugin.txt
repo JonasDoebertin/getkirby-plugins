@@ -1,0 +1,45 @@
+Title: Contact Form
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-14
+
+----
+
+Subtitle: Send Web Forms by Email
+
+----
+
+Featured: true
+
+----
+
+Description: A simple, PHP-only Kirby 2 plugin to handle sending web forms by email.
+
+----
+
+Type: general
+
+----
+
+Authorname: mzur
+
+----
+
+Downloadtitle: Show on GitHub
+
+----
+
+Authorlink: https://github.com/mzur
+
+----
+
+Downloadlink: https://github.com/mzur/kirby-contact-form
+
+----
+
+Icon: panel

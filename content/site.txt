@@ -1,4 +1,4 @@
-Title: Kirby Plugins & Extensions
+Title: Plugins & Extensions for Kirby 2
 
 ----
 

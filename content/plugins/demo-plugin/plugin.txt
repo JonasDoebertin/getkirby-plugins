@@ -18,7 +18,7 @@ Created: 2014-11-13
 
 ----
 
-Type: general, panel
+Type: general
 
 ----
 
@@ -26,7 +26,7 @@ Authorname: Adspectus
 
 ----
 
-Downloadtitle: Show on GitHub
+Downloadtitle: Documentation
 
 ----
 

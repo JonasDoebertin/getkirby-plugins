@@ -30,7 +30,7 @@ Authorname: mzur
 
 ----
 
-Downloadtitle: Show on GitHub
+Downloadtitle: Documentation
 
 ----
 

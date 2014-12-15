@@ -31,6 +31,16 @@ $footer-color:                  #ffffff;
     @extend %clearfix;
 }
 
+    .footer a {
+        color: $footer-color;
+        transition: color 100ms ease-out;
+
+        @include attention() {
+            color: $base-link-color;
+        }
+
+    }
+
     .footer__credits {
         margin-bottom: 0;
         float: left;
@@ -52,11 +62,12 @@ $footer-color:                  #ffffff;
 
         }
 
-    .footer__legal {
+    .footer__nav {
         margin-bottom: 0;
         float: right;
     }
 
-    .footer a {
-        color: $footer-color;
-    }
+        .footer-nav__item + .footer-nav__item:before {
+            content: '\00A0\00A0\00B7\00A0';
+            font-weight: bold;
+        }

@@ -4,12 +4,12 @@
 
         <nav class="filters__bar">
             <span class="filters__title">Show:</span>
-            <ul class="filters__list">
-                <li><a class="filters__item" href="#">All</a></li>
-                <li><a class="filters__item" href="#">Kirbytext Extensions</a></li>
-                <li><a class="filters__item" href="#">Panel Extentions</a></li>
+            <ul class="filters__list  js-isotope-filters">
+                <li><a class="filters__item  js-isotope-filter" data-filter="*" href="#">All</a></li>
+                <li><a class="filters__item  js-isotope-filter" data-filter=".js-isotope-item-kirbytext" href="#">Kirbytext Extensions</a></li>
+                <li><a class="filters__item  js-isotope-filter" data-filter=".js-isotope-item-panel" href="#">Panel Extentions</a></li>
             </ul>
         </nav>
-        
+
     </div>
 </section>

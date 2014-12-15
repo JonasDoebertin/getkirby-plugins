@@ -1,0 +1,45 @@
+Title: Codepen
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Embed Codepen ‘Pens’
+
+----
+
+Featured: false
+
+----
+
+Icon: tags
+
+----
+
+Description: This KirbyText extension allows you to embed ‘Pens’ from Codepen into your content without touching any code.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: plfstr
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://github.com/plfstr
+
+----
+
+Downloadlink: https://gist.github.com/plfstr/9d768b655e73e083c74f

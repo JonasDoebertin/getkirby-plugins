@@ -53,6 +53,8 @@ fields:
             text: Text
             tags: Tags
             twitter: Twitter Logo
+            time: Time
+            search: Search
         width: 1/4
     description:
         label: Description

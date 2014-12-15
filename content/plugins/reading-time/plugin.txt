@@ -1,0 +1,45 @@
+Title: Reading Time
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Estimate the reading time of any text
+
+----
+
+Featured: false
+
+----
+
+Icon: time
+
+----
+
+Description: This additional field method let's you show the estimated reading time of any of your content fields.
+
+----
+
+Type: general
+
+----
+
+Authorname: Roy Lodder
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://roylodder.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/tree/master/readingtime

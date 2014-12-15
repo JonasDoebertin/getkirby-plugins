@@ -23,6 +23,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 .icon--kirby:before {
     content: "\e60b";
 }
@@ -43,6 +44,12 @@
 }
 .icon--quotes:before {
     content: "\e603";
+}
+.icon--time:before {
+    content: "\e60e";
+}
+.icon--search:before {
+    content: "\e60f";
 }
 .icon--generic:before {
     content: "\e60a";

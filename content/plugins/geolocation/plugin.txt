@@ -1,0 +1,45 @@
+Title: Geolocation
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Add Locations to your Content
+
+----
+
+Featured: false
+
+----
+
+Icon: location
+
+----
+
+Description: This custom Panel field allows you to add a Google Map with a draggable marker to your blueprints. The markers position will saved to your content files.
+
+----
+
+Type: panel
+
+----
+
+Authorname: lekkerduidelijk
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://github.com/lekkerduidelijk
+
+----
+
+Downloadlink: https://github.com/lekkerduidelijk/kirby-geolocation-field

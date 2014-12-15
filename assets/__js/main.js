@@ -16,12 +16,18 @@ jQuery(function($) {
     /*
         Initialize Isotope
     */
-   var plugins = $('.js-isotope');
+   var isotopeContainer = $('.js-isotope'),
+       isotopeFilters   = $('.js-isotope-filters');
 
-   plugins.isotope({
+   isotopeContainer.isotope({
        itemSelector: '.js-isotope-item',
-       layoutMode: 'fitRows'
+       layoutMode:   'fitRows'
    });
+
+   isotopeFilters.on('click', '.js-isotope-filter', function(e){
+        e.preventDefault();
+        isotopeContainer.isotope({filter: $(this).attr('data-filter')});
+    });
 
 
 });

@@ -1,0 +1,45 @@
+Title: Read Later
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Add "Read Later" Links
+
+----
+
+Featured: false
+
+----
+
+Icon: generic
+
+----
+
+Description: This plugin is a nice shorthand for creating "Save to Instapaper" and "Save to Pocket" links for your content.
+
+----
+
+Type: general
+
+----
+
+Authorname: Roy Lodder
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://roylodder.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/blob/master/readlater

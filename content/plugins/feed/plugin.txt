@@ -1,0 +1,45 @@
+Title: Feed
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Create RSS Feeds for any set of pages
+
+----
+
+Featured: false
+
+----
+
+Icon: generic
+
+----
+
+Description: This plugin assists with creating RSS feeds for your content. Once installed, you can create a feed for any set of pages. Even multiple feeds are possible.
+
+----
+
+Type: general
+
+----
+
+Authorname: Bastian Allgeier
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://getkirby.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/tree/master/feed

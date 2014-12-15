@@ -1,0 +1,45 @@
+Title: Tagcloud
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Quick Tagclouds for Blogs
+
+----
+
+Featured: false
+
+----
+
+Icon: generic
+
+----
+
+Description: The Tagcloud plugin will create a list of all tags from subpages and return them with additional information – like the number of subpages for a each tag.
+
+----
+
+Type: general
+
+----
+
+Authorname: Bastian Allgeier
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://getkirby.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/blob/master/tagcloud

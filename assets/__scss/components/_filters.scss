@@ -22,16 +22,25 @@ $filters-vertical-padding:      $spacing-unit / 2;
         border-radius: $base-box-round;
         padding: 0 $spacing-unit;
         color: $filters-text-color;
-
         box-shadow: 0px 5px 0px $filters-background-shade;
+        text-align: center;
 
         @extend %clearfix;
+
+        @include media-query(lap-and-up) {
+            text-align: left;
+        }
     }
 
         .filters__title {
             font-weight: 600;
-            float: left;
             padding: $filters-vertical-padding 0;
+            display: none;
+
+            @include media-query(lap-and-up) {
+                display: inline;
+                float: left;
+            }
         }
 
         .filters__list {
@@ -39,7 +48,10 @@ $filters-vertical-padding:      $spacing-unit / 2;
             padding: 0;
             list-style: none;
             display: inline-block;
-            float: right;
+
+            @include media-query(lap-and-up) {
+                float: right;
+            }
         }
 
             .filters__list li {

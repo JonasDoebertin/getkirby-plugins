@@ -1,0 +1,45 @@
+Title: Remote Auth
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Implement 3rd Party Login Services
+
+----
+
+Featured: false
+
+----
+
+Icon: panel
+
+----
+
+Description: Easily add "Login with Twitter" and "Login with GitHub" buttons to your website and authenticate your users with OAuth.
+
+----
+
+Type: general
+
+----
+
+Authorname: Sebastian Müller
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://sbstjn.com/
+
+----
+
+Downloadlink: http://sbstjn.com/en/Kirby-OAuth-twitter-connect.html

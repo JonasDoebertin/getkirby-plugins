@@ -1,0 +1,22 @@
+/**
+* $ERROR
+*/
+
+
+/**
+* #SECTION OVERRIDES
+*/
+.section--error .section__wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/**
+* #ERROR
+*/
+.error {
+    background: url('../images/balloon.png') no-repeat bottom center;
+    background-size: 1122px 528px;
+    height: 580px;
+}

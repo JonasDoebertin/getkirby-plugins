@@ -1,0 +1,15 @@
+/* TEAM */
+
+    Name: Jonas Döbertin
+     URL: http://jd-powered.net
+   Email: hello@jd-powered.net
+ Twitter: @DieserJonas
+Location: Hamburg, Germany
+
+
+/* SITE */
+
+ Standards: HTML5, CSS3, PHP, JS.
+Components: inuit.css, jQuery, Isotope
+  Software: Atom, npm, Bower, Gulp
+      Host: ALL-INKL.COM - Neue Medien Münnich

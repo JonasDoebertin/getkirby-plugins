@@ -42,8 +42,13 @@ $footer-color:                  #ffffff;
     }
 
     .footer__credits {
-        margin-bottom: 0;
-        float: left;
+        text-align: center;
+
+        @include media-query(desk) {
+            text-align: left;
+            margin-bottom: 0;
+            float: left;
+        }
     }
 
         .footer__icon {
@@ -64,7 +69,11 @@ $footer-color:                  #ffffff;
 
     .footer__nav {
         margin-bottom: 0;
-        float: right;
+        text-align: center;
+
+        @include media-query(desk) {
+            float: right;
+        }
     }
 
         .footer-nav__item + .footer-nav__item:before {

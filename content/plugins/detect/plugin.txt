@@ -1,0 +1,45 @@
+Title: Detect
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Device Dependent Snippets
+
+----
+
+Featured: false
+
+----
+
+Icon: generic
+
+----
+
+Description: Load snippets or template parts based on the users device.
+
+----
+
+Type: general
+
+----
+
+Authorname: van Wunnik & Tijhuis
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://www.studiodumbar.com/
+
+----
+
+Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/detect

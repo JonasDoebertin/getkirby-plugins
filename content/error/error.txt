@@ -2,4 +2,4 @@ Title: Error
 
 ----
 
-Text: The page has not been found.
+Introduction: Oh well, it seems **something went wrong** and we couldn't find the page you were looking for. (link: / text: Start over again)?

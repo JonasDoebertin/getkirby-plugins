@@ -21,7 +21,7 @@
 
         <meta name="google-site-verification" content="<?= $site->googleverification() ?>">
     </head>
-    <body>
+    <body class="template--<?= $page->intendedTemplate() ?>">
 
         <header class="section  section--header  header">
             <div class="section__wrap">

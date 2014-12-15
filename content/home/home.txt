@@ -6,7 +6,7 @@ Addpluginheading: Add a plugin
 
 ----
 
-Addpluginlead: You know about an awesome plugin or extension<br/>for <a href="http://getkirby.com/">Kirby 2</a> that's not listed here?
+Addpluginlead: You know about an awesome plugin or extension for <a href="http://getkirby.com/">Kirby 2</a> that's not listed here?
 
 ----
 

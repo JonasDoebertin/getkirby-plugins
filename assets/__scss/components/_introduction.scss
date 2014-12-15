@@ -7,9 +7,9 @@
  * #LOCAL VARIABLES
  */
 $introduction-section-padding:         3 * $spacing-unit;
-$introduction-section-background:     #e9e6e1;
-$introduction-text-color:             #69767F;
-$introduction-text-color--bold:       $base-heading-color;
+$introduction-section-background:      #e9e6e1;
+$introduction-text-color:              #69767F;
+$introduction-text-color--bold:        $base-heading-color;
 
 
 /**
@@ -26,6 +26,10 @@ $introduction-text-color--bold:       $base-heading-color;
     @extend %clearfix;
 }
 
+.template--error .section--introduction {
+    background-color: transparent;
+}
+
 
 /**
  * #INTRODUCTION
@@ -33,12 +37,17 @@ $introduction-text-color--bold:       $base-heading-color;
 .introduction {}
 
     .introduction__text {
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
         text-align: center;
-        @include font-size(32px);
+        @include font-size(26px);
         color: $introduction-text-color;
         font-weight: 300;
+
+        @include media-query(lap-and-up) {
+            @include font-size(32px);
+            max-width: 80%;
+        }
     }
 
         .introduction__text p {

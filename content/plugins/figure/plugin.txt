@@ -1,0 +1,45 @@
+Title: Figure
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Figures for your Templates
+
+----
+
+Featured: false
+
+----
+
+Icon: tags
+
+----
+
+Description: A plugin that generates an image in a figure tag in your templates, with a lot of options: among others crop ratio, alt-tag and (an opinionated) lazyload setting.
+
+----
+
+Type: general
+
+----
+
+Authorname: van Wunnik & Tijhuis
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://studiodumbar.com/
+
+----
+
+Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/figure

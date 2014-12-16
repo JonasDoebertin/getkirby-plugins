@@ -9,7 +9,7 @@ var gulp       = require('gulp'),
     concat     = require('gulp-concat'),
     rename     = require('gulp-rename'),
     include    = require('gulp-include'),
-    replace    = require('gulp-replace-task'),
+    replace    = require('gulp-replace'),
     clean      = require('gulp-clean');
 
 
@@ -39,53 +39,9 @@ var scssPaths = [
 
 
 /*
-    Path: Folder path for a prepared deploy
- */
-var deployBasePath = '__deploy/';
-
-
-
-
-
-/*
-    Paths: File Paths to include when preparing a deploy
- */
-var deployIncludePaths = [
-    '**/*',
-    '.htaccess',
-    '!{__deploy,__deploy/**}',
-    '!{.git,.git/**}',
-    '!assets/{__js,__js/**}',
-    '!assets/{__scss,__scss/**}',
-    '!assets/{__vendor,__vendor/**}',
-    '!{node_modules,node_modules/**}',
-    '!thumbs/**',
-    '!.bowerrc',
-    '!.gitignore',
-    '!.gitmodules',
-    '!bower.json',
-    '!composer.{json,lock}',
-    '!gulpfile.js',
-    '!package.json',
-    '!license.md',
-    '!readme.md'
-];
-
-/*
-    Paths: Deploying will add timestamps to this files
- */
-var deployInsertPaths = [
-    '__deploy/site/snippets/**/*'
-];
-
-
-
-
-
-/*
     Task: Compile and minify SCSS
  */
-gulp.task('css', function() {
+gulp.task('css', ['timestamps'], function() {
     return gulp.src(scssPaths)
         .pipe(sass({errLogToConsole: true}))
         .pipe(autoprefix('last 2 versions', '> 1%', 'ie 8', 'ie 9'))
@@ -100,7 +56,7 @@ gulp.task('css', function() {
 /*
     Task: Combine and uglify JS
  */
-gulp.task('js', function() {
+gulp.task('js', ['timestamps'], function() {
     return gulp.src(jsPaths)
         .pipe(include())
         .pipe(uglify({preserveComments: 'some'}))
@@ -111,39 +67,13 @@ gulp.task('js', function() {
 
 
 
-
 /*
-    Task: Clear deploy directory
+    Task: Insert timestamps into template files
  */
-gulp.task('deploy-cleanup', function() {
-    return gulp.src(deployBasePath, {read: false})
-        .pipe(clean());
-});
-
-
-/*
-    Task: Copy files for a deploy
- */
-gulp.task('deploy-copy', ['deploy-cleanup', 'css', 'js'], function() {
-    return gulp.src(deployIncludePaths)
-        .pipe(gulp.dest(deployBasePath));
-});
-
-
-/*
-    Task: Prepare a deploy and insert timestamps for cache busting
- */
-gulp.task('deploy', ['deploy-copy'], function() {
-    gulp.src(deployInsertPaths)
-        .pipe(replace({
-            patterns: [
-                {
-                    match:       'timestamp',
-                    replacement: new Date().getTime()
-                }
-            ]
-        }))
-        .pipe(gulp.dest('__deploy/site/snippets/'));
+gulp.task('timestamps', function() {
+        return gulp.src('site/snippets/**/*')
+            .pipe(replace(/(@@)(?:\d+|timestamp)/ig, '$1' + new Date().getTime()))
+            .pipe(gulp.dest('site/snippets'));
 });
 
 

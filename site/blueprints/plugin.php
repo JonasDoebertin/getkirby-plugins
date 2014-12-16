@@ -67,6 +67,7 @@ fields:
         options:
             general: General Plugin
             kirbytext: KirbyText Extension
+            field: Field Extension
             panel: Panel Extension
         width: 1/4
         columns: 1

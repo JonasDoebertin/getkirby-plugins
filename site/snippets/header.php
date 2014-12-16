@@ -15,9 +15,8 @@
         <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic">
-        <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic') ?>
-        <link rel="stylesheet" href="assets/css/main.@@timestamp.css">
+        <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600') ?>
+        <link rel="stylesheet" href="assets/css/main.@@1418767497500.css">
 
         <meta name="google-site-verification" content="<?= $site->googleverification() ?>">
     </head>

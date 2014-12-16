@@ -1,0 +1,45 @@
+Title: Columns
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-16
+
+----
+
+Subtitle: Simple Multi-Column Text
+
+----
+
+Featured: false
+
+----
+
+Icon: text
+
+----
+
+Description: This is a plugin for Kirby enables a simple syntax in Kirbytext for multi-column layouts/text.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Bastian Allgeier
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://getkirby.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/tree/master/columns

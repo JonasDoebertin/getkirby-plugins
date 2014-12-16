@@ -26,7 +26,7 @@ Description: This additional field method let's you show the estimated reading t
 
 ----
 
-Type: general
+Type: field
 
 ----
 

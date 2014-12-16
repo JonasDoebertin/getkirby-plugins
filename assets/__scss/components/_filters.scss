@@ -63,7 +63,8 @@ $filters-vertical-padding:      $spacing-unit / 2;
                     padding: $filters-vertical-padding 15px;
                     display: inline-block;
 
-                    &:hover {
+                    &:hover,
+                    &[data-active="true"] {
                         background: $filters-background-shade;
                         box-shadow: 0px 5px 0px shade($filters-background-shade, 20%);
                     }

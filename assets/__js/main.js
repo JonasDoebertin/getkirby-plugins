@@ -17,16 +17,18 @@ jQuery(function($) {
         Initialize Isotope
     */
    var isotopeContainer = $('.js-isotope'),
-       isotopeFilters   = $('.js-isotope-filters');
+       isotopeFilters   = $('.js-isotope-filter');
 
    isotopeContainer.isotope({
        itemSelector: '.js-isotope-item',
        layoutMode:   'fitRows'
    });
 
-   isotopeFilters.on('click', '.js-isotope-filter', function(e){
+   isotopeFilters.on('click', function(e){
         e.preventDefault();
         isotopeContainer.isotope({filter: $(this).attr('data-filter')});
+        isotopeFilters.attr('data-active', 'false');
+        $(this).attr('data-active', 'true');
     });
 
 

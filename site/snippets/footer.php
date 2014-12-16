@@ -24,5 +24,7 @@
         <script src="assets/js/plugins.@@timestamp.min.js"></script>
         <script src="assets/js/main.@@timestamp.min.js"></script>
 
+        <?php snippet('tools/tracking') ?>
+
     </body>
 </html>

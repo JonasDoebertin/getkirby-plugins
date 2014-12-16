@@ -1,0 +1,45 @@
+Title: ByDate
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Group Content by Date
+
+----
+
+Featured: false
+
+----
+
+Icon: calendar
+
+----
+
+Description: Let's you group any set of pages or posts by year or year and month. This makes creating archive pages a breeze.
+
+----
+
+Type: general
+
+----
+
+Authorname: Florent Verschelde
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://fvsch.com/
+
+----
+
+Downloadlink: https://github.com/fvsch/kirby-bydate

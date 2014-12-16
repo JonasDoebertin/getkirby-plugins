@@ -1,0 +1,45 @@
+Title: Event Calendar
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-15
+
+----
+
+Subtitle: Implement an Event Calendar
+
+----
+
+Featured: false
+
+----
+
+Icon: calendar
+
+----
+
+Description: A plugin for the Kirby CMS to easily implement an event calendar.
+
+----
+
+Type: general
+
+----
+
+Authorname: Martin Zurowietz
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://github.com/mzur/kirby-calendar-plugin
+
+----
+
+Downloadlink: https://github.com/mzur/kirby-calendar-plugin/

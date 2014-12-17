@@ -7,7 +7,7 @@
                 $plugins = $pages
                     ->find('plugins')->children()
                     ->filterBy('draft', 'false')
-                    ->sortBy('title', 'ASC')
+                    ->sortBy('uid', 'asc')
             ?>
 
             <?php foreach($plugins as $plugin): ?>

@@ -18,7 +18,7 @@
         <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600') ?>
         <link rel="stylesheet" href="assets/css/main.@@1418767497500.css">
 
-        <meta name="google-site-verification" content="<?= $site->googleverification() ?>">
+        <meta name="google-site-verification" content="<?= $site->googleverification() ?>" />
     </head>
     <body class="template--<?= $page->intendedTemplate() ?>">
 

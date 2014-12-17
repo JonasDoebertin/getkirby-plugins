@@ -1,0 +1,45 @@
+Title: Title Case
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-17
+
+----
+
+Subtitle: Convert Text to "Title Case"
+
+----
+
+Featured: false
+
+----
+
+Icon: text
+
+----
+
+Description: An additional field method for Kirby CMS to convert text to Title Case.
+
+----
+
+Type: field
+
+----
+
+Authorname: Tijhuis & van Wunnik
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://www.studiodumbar.com/
+
+----
+
+Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/titlecase

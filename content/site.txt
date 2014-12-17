@@ -1,4 +1,4 @@
-Title: Plugins & Extensions for Kirby 2
+Title: All Kirby CMS plugins in one place
 
 ----
 
@@ -11,3 +11,7 @@ Copyright: Made by <a href="http://jd-powered.net/" rel="author">»jd« powered<
 ----
 
 Googleverification: 9-T2RwxqVQBRpT4d-wClmSpkUwxecQn6Irz2ch2KKfw
+
+----
+
+Heading: Plugins & Extensions for Kirby 2

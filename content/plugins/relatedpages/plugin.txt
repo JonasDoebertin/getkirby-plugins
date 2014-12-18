@@ -42,4 +42,4 @@ Draft: false
 
 ----
 
-Icon: generic
+Icon: loop

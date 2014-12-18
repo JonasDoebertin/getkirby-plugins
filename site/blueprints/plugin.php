@@ -43,16 +43,25 @@ fields:
             coffee: Coffee
             image: Image
             video: Video
+            tags: Tags
+            payment: Payment
             location: Location
             calendar: Calendar
+            mobile: Mobile
+            users: Users
             quotes: Quotes
             generic: Generic
+            cloud: Cloud
+            link: Link / Anchor
+            star: Star
             heart: Heart
+            loop: Loop / Repeat / Retweet
             panel: Panel
             formatting: Formatting
             text: Text
             tags: Tags
             twitter: Twitter Logo
+            feed: Feed / RSS
             time: Time
             search: Search
         width: 1/4

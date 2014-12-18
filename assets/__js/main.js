@@ -24,6 +24,10 @@ jQuery(function($) {
        layoutMode:   'fitRows'
    });
 
+    setTimeout(function() {
+        isotopeContainer.isotope('layout');
+    }, 300);
+
    isotopeFilters.on('click', function(e){
         e.preventDefault();
         isotopeContainer.isotope({filter: $(this).attr('data-filter')});

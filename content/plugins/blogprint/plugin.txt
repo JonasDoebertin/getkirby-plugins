@@ -1,0 +1,45 @@
+Title: BlogPrint
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-18
+
+----
+
+Subtitle: A Blueprint for Blogs with Kirby
+
+----
+
+Featured: false
+
+----
+
+Icon: generic
+
+----
+
+Description: Blogprint is a theme & plugin combination to kickstart a blog. It provides all basic features you need for a fully functional blog, but without any styling - only semantic markup is provided.
+
+----
+
+Type: general
+
+----
+
+Authorname: Jan Hofmann
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://github.com/ausminternet
+
+----
+
+Downloadlink: https://github.com/ausminternet/blogprint

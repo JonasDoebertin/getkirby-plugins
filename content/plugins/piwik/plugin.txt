@@ -1,0 +1,45 @@
+Title: Piwik
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-19
+
+----
+
+Subtitle: Track your Website with Piwik
+
+----
+
+Featured: false
+
+----
+
+Icon: generic
+
+----
+
+Description: Generates the Piwik analytics code for easy use in your templates or snippets.
+
+----
+
+Type: general
+
+----
+
+Authorname: Michael Fürmann
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://spicyweb.de
+
+----
+
+Downloadlink: https://spicyhub.de/spicy-web/kirby-plugin-piwik

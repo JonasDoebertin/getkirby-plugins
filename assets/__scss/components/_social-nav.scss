@@ -1,0 +1,25 @@
+/**
+ * $SOCIAL NAV
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$social-nav-color:                 #ffffff;
+
+
+/**
+ * #SOCIAL NAV
+ */
+.social-nav {}
+
+    .social-nav__item a {
+        color: $social-nav-color;
+        text-decoration: none;
+
+        @include attention() {
+            color: mix($social-nav-color, $base-link-color, 75%);
+        }
+
+    }

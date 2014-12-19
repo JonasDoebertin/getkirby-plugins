@@ -30,7 +30,7 @@ Type: field
 
 ----
 
-Authorname: Tijhuis & van Wunnik
+Authorname: Studio Dumbar
 
 ----
 

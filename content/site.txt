@@ -14,7 +14,7 @@ Googleverification: 9-T2RwxqVQBRpT4d-wClmSpkUwxecQn6Irz2ch2KKfw
 
 ----
 
-Heading: Plugins & Extensions for Kirby 2
+Heading: Plugins & Extensions for Kirby 2
 
 ----
 

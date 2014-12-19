@@ -260,6 +260,9 @@ FileETag None
     ExpiresByType application/atom+xml                  "access plus 1 hour"
     ExpiresByType application/rss+xml                   "access plus 1 hour"
 
+  # Sitemaps
+    ExpiresByType text/xml                              "access plus 1 hour"
+
   # Web fonts
     ExpiresByType application/font-woff                 "access plus 1 month"
     ExpiresByType application/font-woff2                "access plus 1 month"

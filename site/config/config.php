@@ -1,4 +1,4 @@
-<?php
+<?php if(!defined('KIRBY')) exit;
 
 /*
 
@@ -61,4 +61,7 @@ c::set('tinyurl.enabled', false);
 
 c::set('sitemap.ignore', array());
 
-c::set('debug', true);
+/*
+    Disable the output of debug information on production sites
+ */
+c::set('debug', false);

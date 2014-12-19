@@ -1,4 +1,4 @@
-<?php
+<?php if(!defined('KIRBY')) exit;
 
 /*
 
@@ -20,6 +20,32 @@ c::set('license', 'put your license key here');
 /*
 
 ---------------------------------------
+Routing
+---------------------------------------
+
+Set up some additional routes here.
+
+*/
+
+c::set('routes', array(
+
+    /*
+        SITEMAP
+        =======
+        1. Reroute calls to "/sitemap.xml" to "/sitemap"
+     */
+    array(
+        'pattern' => 'sitemap.xml',
+        'action'  => function() {
+            return site()->visit('sitemap');
+        }
+    ),
+
+));
+
+/*
+
+---------------------------------------
 Kirby Configuration
 ---------------------------------------
 
@@ -33,4 +59,9 @@ c::set('timezone', 'Europe/Berlin');
 
 c::set('tinyurl.enabled', false);
 
-c::set('debug', true);
+c::set('sitemap.ignore', array());
+
+/*
+    Disable the output of debug information on production sites
+ */
+c::set('debug', false);

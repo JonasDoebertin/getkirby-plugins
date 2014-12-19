@@ -15,3 +15,12 @@ Googleverification: 9-T2RwxqVQBRpT4d-wClmSpkUwxecQn6Irz2ch2KKfw
 ----
 
 Heading: Plugins & Extensions for Kirby 2
+
+----
+
+Social: 
+
+- 
+  username: @getkirbyplugins
+  icon: twitter
+  link: https://twitter.com/getkirbyplugins

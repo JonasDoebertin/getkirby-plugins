@@ -16,7 +16,7 @@
 
         <!-- styles -->
         <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600') ?>
-        <?= css('/assets/css/main.@@1418943567980.css') ?>
+        <?= css('/assets/css/main.@@1419004664153.css') ?>
 
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="<?= url('/assets/images/favicons/apple-touch-icon-57x57.png') ?>">
@@ -42,6 +42,7 @@
 
         <!-- misc -->
         <meta name="google-site-verification" content="<?= $site->googleverification() ?>" />
+
     </head>
     <body class="template--<?= $page->intendedTemplate() ?>">
 
@@ -53,6 +54,14 @@
                 </div>
 
                 <h1 class="header__title"><?= $site->heading()->html() ?></h1>
+
+                <ul class="header__social  list-inline  social-nav">
+                    <?php foreach(yaml($site->social()) as $network): ?>
+                        <li class="social-nav__item">
+                            <a href="<?= $network['link'] ?>" target="_blank"><i class="icon--<?= $network['icon'] ?>"></i></a>
+                        <!--</li>-->
+                    <?php endforeach ?>
+                </ul>
 
         </div>
         </header>

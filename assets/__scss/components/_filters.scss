@@ -20,16 +20,17 @@ $filters-vertical-padding:      $spacing-unit / 2;
     .filters__bar {
         background: $filters-background;
         border-radius: $base-box-round;
-        padding: 0 $spacing-unit;
+        padding: 0;
         color: $filters-text-color;
         box-shadow: 0px 5px 0px $filters-background-shade;
         text-align: center;
-
         @extend %clearfix;
 
         @include media-query(lap-and-up) {
             text-align: left;
+            padding: 0 $spacing-unit;
         }
+
     }
 
         .filters__title {
@@ -41,32 +42,74 @@ $filters-vertical-padding:      $spacing-unit / 2;
                 display: inline;
                 float: left;
             }
+
         }
 
         .filters__list {
             margin: 0;
             padding: 0;
             list-style: none;
-            display: inline-block;
+            display: block;
 
             @include media-query(lap-and-up) {
                 float: right;
+                display: inline-block;
             }
+
         }
 
             .filters__list li {
-                display: inline;
+                display: block;
+
+                @include media-query(lap-and-up) {
+                    display: inline;
+                }
+
             }
 
                 .filters__item {
                     color: $filters-text-color;
                     padding: $filters-vertical-padding 15px;
-                    display: inline-block;
+                    display: block;
 
                     &:hover,
                     &[data-active="true"] {
                         background: $filters-background-shade;
-                        box-shadow: 0px 5px 0px shade($filters-background-shade, 20%);
+                    }
+
+                    @include media-query(lap-and-up) {
+                        display: inline-block;
+
+                        &:hover,
+                        &[data-active="true"] {
+                            box-shadow: 0px 5px 0px shade($filters-background-shade, 20%);
+                        }
+
+                    }
+
+                }
+
+                @include media-query(palm) {
+
+                    .filters__list li:first-child .filters__item {
+
+                        &:hover,
+                        &[data-active="true"] {
+                            border-top-right-radius: $base-box-round;
+                            border-top-left-radius: $base-box-round;
+                        }
+
+                    }
+
+                    .filters__list li:last-child .filters__item {
+
+                        &:hover,
+                        &[data-active="true"] {
+                            box-shadow: 0px 5px 0px shade($filters-background-shade, 20%);
+                            border-bottom-right-radius: $base-box-round;
+                            border-bottom-left-radius: $base-box-round;
+                        }
+
                     }
 
                 }

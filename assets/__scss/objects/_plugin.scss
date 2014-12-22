@@ -70,12 +70,19 @@ $plugin-subtitle-color:         #525C63;
 .plugin--featured {
 
     &:after {
-        content: url('../images/ribbons/featured.png');
+        background: url('../images/ribbons/featured.png') top right no-repeat;
+        background-size: 80px 80px;
+        content: '';
         width: 80px;
         height: 80px;
         position: absolute;
         top: -4px;
         right: -4px;
+
+        @include media-query(retina) {
+            background-image: url('../images/ribbons/featured-2x.png');
+        }
+
     }
 
 }
@@ -86,12 +93,19 @@ $plugin-subtitle-color:         #525C63;
 .plugin--new {
 
     &:before {
-        content: url('../images/ribbons/new.png');
+        background: url('../images/ribbons/new.png') top left no-repeat;
+        background-size: 80px 80px;
+        content: '';
         width: 80px;
         height: 80px;
         position: absolute;
         top: -4px;
         left: -4px;
+
+        @include media-query(retina) {
+            background-image: url('../images/ribbons/new-2x.png');
+        }
+
     }
 
 }

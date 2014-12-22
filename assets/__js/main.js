@@ -2,8 +2,15 @@
 
 jQuery(function($) {
 
-    /*
-        Clamp plugin description texts
+    /**
+     * #RETINA.JS
+     */
+    Retina.configure({
+        retinaImageSuffix: '-2x'
+    });
+
+    /**
+     * #DOTDOTDOT.JS
      */
     var pluginDescriptions = $('.js-plugin-description');
 
@@ -13,9 +20,12 @@ jQuery(function($) {
     });
 
 
-    /*
-        Initialize Isotope
-    */
+    /**
+     * #ISOTOPE
+     * [1] Initialize Isotope
+     * [2] Recalculate positions after pageload
+     * [3] Make filter links work
+     */
    var isotopeContainer = $('.js-isotope'),
        isotopeFilters   = $('.js-isotope-filter');
 

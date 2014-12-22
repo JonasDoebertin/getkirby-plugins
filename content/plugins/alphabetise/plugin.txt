@@ -1,0 +1,45 @@
+Title: Alphabetise
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-22
+
+----
+
+Subtitle: Group Pages by First Character
+
+----
+
+Featured: false
+
+----
+
+Icon: loop
+
+----
+
+Description: The Alphabetise plugin will alphabetise a given Kirby CMS page array or tag array and return it for further processing/display as an alphabetised array.
+
+----
+
+Type: general
+
+----
+
+Authorname: Russ Baldwin
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://shoesforindustry.net/
+
+----
+
+Downloadlink: https://github.com/shoesforindustry/kirbycms-extensions/tree/master/plugins/alphabetise

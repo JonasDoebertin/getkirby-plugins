@@ -14,7 +14,7 @@ Subtitle: Unslugify Texts
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 

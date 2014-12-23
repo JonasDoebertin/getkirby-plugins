@@ -1,0 +1,45 @@
+Title: Imgsrc
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-23
+
+----
+
+Subtitle: Cropped Thumbnails on the Fly
+
+----
+
+Featured: false
+
+----
+
+Icon: image
+
+----
+
+Description: Generates an src attribute only. Handy for creating an img tag or for use as background image url while cropping the image at the same time.
+
+----
+
+Type: general
+
+----
+
+Authorname: Studio Dumbar
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://studiodumbar.com/
+
+----
+
+Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/imgsrc

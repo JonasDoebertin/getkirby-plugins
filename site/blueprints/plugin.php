@@ -43,7 +43,7 @@ fields:
             coffee: Coffee
             image: Image
             video: Video
-            tags: Tags
+            markup: Markup
             payment: Payment
             location: Location
             calendar: Calendar

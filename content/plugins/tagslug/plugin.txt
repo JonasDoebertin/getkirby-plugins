@@ -1,0 +1,45 @@
+Title: Tagslug
+
+----
+
+Draft: false
+
+----
+
+Created: 2014-12-23
+
+----
+
+Subtitle: Slugify Texts
+
+----
+
+Featured: false
+
+----
+
+Icon: tags
+
+----
+
+Description: Convert a tag name or field to a slug (url) string (e.g. convert Interactive & Web to interactive-and-web).
+
+----
+
+Type: field
+
+----
+
+Authorname: Studio Dumbar
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://www.studiodumbar.com/
+
+----
+
+Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/tagslug

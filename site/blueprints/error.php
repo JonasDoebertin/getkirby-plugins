@@ -9,5 +9,5 @@ fields:
         type:  text
     introduction:
         label: Introduction Text
-        type: textarea
+        type:  textarea
         width: 1/2

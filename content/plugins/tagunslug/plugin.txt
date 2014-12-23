@@ -1,0 +1,45 @@
+Title: Tagunslug
+
+----
+
+Draft: true
+
+----
+
+Created: 2014-12-23
+
+----
+
+Subtitle: Unslugify Texts
+
+----
+
+Featured: true
+
+----
+
+Icon: generic
+
+----
+
+Description: Convert a slug (url) string into readable words (e.g. convert interactive-and-web to Interactive & Web).
+
+----
+
+Type: field
+
+----
+
+Authorname: Studio Dumbar
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://www.studiodumbar.com/
+
+----
+
+Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/tagunslug

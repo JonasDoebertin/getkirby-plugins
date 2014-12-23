@@ -1,102 +1,104 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Plugin
-pages: false
-files: false
+title:   Plugin
+pages:   false
+files:   false
 preview: false
 fields:
     title:
-        label: Name
-        type:  text
+        label:    Name
+        type:     text
         required: true
-        width: 1/2
+        width:    1/2
     draft:
-        label: Draft
-        type: toggle
-        text: yes/no
+        label:    Draft
+        type:     toggle
+        text:     yes/no
         required: true
-        width: 1/4
+        width:    1/4
+        default:  true
     created:
-        label: Added
-        type: date
-        format: MM/DD/YYYY
-        default: today
+        label:    Added
+        type:     date
+        format:   MM/DD/YYYY
+        default:  today
         required: true
-        width: 1/4
+        width:    1/4
     subtitle:
-        label: Subtitle
-        type:  text
+        label:    Subtitle
+        type:     text
         required: true
-        width: 1/2
+        width:    1/2
     featured:
-        label: Featured Plugin
-        type: toggle
-        text: yes/no
+        label:    Featured Plugin
+        type:     toggle
+        text:     yes/no
         required: true
-        width: 1/4
+        width:    1/4
+        default:  false
     icon:
-        label: Icon
-        type: select
-        default: generic
+        label:    Icon
+        type:     select
+        default:  generic
         options:
-            kirby: Kirby Logo
-            coffee: Coffee
-            image: Image
-            video: Video
-            tags: Tags
-            payment: Payment
-            location: Location
             calendar: Calendar
-            mobile: Mobile
-            users: Users
-            quotes: Quotes
-            generic: Generic
-            cloud: Cloud
-            link: Link / Anchor
-            star: Star
-            heart: Heart
-            loop: Loop / Repeat / Retweet
-            panel: Panel
+            cloud:      Cloud
+            coffee:     Coffee
+            feed:       Feed / RSS
             formatting: Formatting
-            text: Text
-            tags: Tags
-            twitter: Twitter Logo
-            feed: Feed / RSS
-            time: Time
-            search: Search
-        width: 1/4
+            generic:    Generic
+            heart:      Heart
+            image:      Image
+            kirby:      Kirby Logo
+            link:       Link / Anchor
+            location:   Location
+            loop:       Loop / Repeat / Retweet
+            markup:     Markup
+            mobile:     Mobile
+            panel:      Panel
+            payment:    Payment
+            quotes:     Quotes
+            search:     Search
+            star:       Star
+            tags:       Tags
+            text:       Text
+            time:       Time
+            twitter:    Twitter Logo
+            users:      Users
+            video:      Video
+        width:    1/4
     description:
-        label: Description
-        type:  textarea
-        width: 3/4
+        label:    Description
+        type:     textarea
+        width:    3/4
         required: true
     type:
-        label: Plugin Type
-        type: checkboxes
+        label:    Plugin Type
+        type:     checkboxes
         options:
-            general: General Plugin
+            general:   General Plugin
             kirbytext: KirbyText Extension
-            field: Field Extension
-            panel: Panel Extension
-        width: 1/4
-        columns: 1
+            field:     Field Extension
+            panel:     Panel Extension
+        width:    1/4
+        columns:  1
     authorname:
-        label: Author Name
-        type: text
+        label:    Author Name
+        type:     text
         required: true
-        width: 1/2
+        width:    1/2
     downloadtitle:
-        label: Download Link Title
-        type: text
+        label:    Download Link Title
+        type:     text
         required: true
-        width: 1/2
+        width:    1/2
     authorlink:
-        label: Author Link
-        type: url
+        label:    Author Link
+        type:     url
         required: true
-        width: 1/2
+        width:    1/2
     downloadlink:
-        label: Download Link
-        type: url
+        label:    Download Link
+        type:     url
         required: true
-        width: 1/2
+        width:    1/2

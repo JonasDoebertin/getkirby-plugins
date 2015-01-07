@@ -14,6 +14,13 @@
             document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
         </script>
 
+        <!-- set global javascript configuration -->
+        <script>
+            var Config = {
+                'environment': '<?= Environment::get() ?>'
+            }
+        </script>
+
         <!-- styles -->
         <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600') ?>
         <?= css('/assets/css/main.@@1419322956409.css') ?>

@@ -56,12 +56,21 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 */
 
 c::set('timezone', 'Europe/Berlin');
-
 c::set('tinyurl.enabled', false);
 
-c::set('sitemap.ignore', array());
+
+/* Disable the output of debug information on production sites */
+c::set('debug', false);
 
 /*
-    Disable the output of debug information on production sites
- */
-c::set('debug', false);
+
+---------------------------------------
+Custom Configuration
+---------------------------------------
+
+Let's add some custom configuration options.
+
+*/
+
+c::set('environment', 'production');
+c::set('sitemap.ignore', array());

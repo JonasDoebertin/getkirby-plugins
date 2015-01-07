@@ -11,7 +11,7 @@ class CssClasses {
             $classes .= ' plugin--featured ';
         }
 
-        if((strtotime($plugin->created()) + 60 * 60 * 24 * 30) > time())
+        if((strtotime($plugin->created()) + 60 * 60 * 24 * 14) > time())
         {
             $classes .= ' plugin--new ';
         }

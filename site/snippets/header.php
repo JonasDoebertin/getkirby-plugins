@@ -14,9 +14,16 @@
             document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
         </script>
 
+        <!-- set global javascript configuration -->
+        <script>
+            var Config = {
+                'environment': '<?= Environment::get() ?>'
+            }
+        </script>
+
         <!-- styles -->
         <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600') ?>
-        <?= css('/assets/css/main.@@1419322956409.css') ?>
+        <?= css('/assets/css/main.@@1420621915651.css') ?>
 
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="<?= url('/assets/images/favicons/apple-touch-icon-57x57.png') ?>">

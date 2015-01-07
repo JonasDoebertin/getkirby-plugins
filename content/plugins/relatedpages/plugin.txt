@@ -10,7 +10,7 @@ Description: The RelatedPages plugin provides an easy, but flexible way of incor
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 

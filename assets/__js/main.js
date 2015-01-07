@@ -26,23 +26,43 @@ jQuery(function($) {
      * [2] Recalculate positions after pageload
      * [3] Make filter links work
      */
-   var isotopeContainer = $('.js-isotope'),
-       isotopeFilters   = $('.js-isotope-filter');
+    var isotopeContainer = $('.js-isotope'),
+        isotopeFilters   = $('.js-isotope-filter');
 
-   isotopeContainer.isotope({
-       itemSelector: '.js-isotope-item',
-       layoutMode:   'fitRows'
-   });
+    /*
+        [1] Initialize Isotope
+     */
+    isotopeContainer.isotope({
+        itemSelector: '.js-isotope-item',
+        layoutMode:   'fitRows'
+    });
 
+    /*
+        [2] Recalculate positions after pageload
+     */
     setTimeout(function() {
         isotopeContainer.isotope('layout');
     }, 300);
 
-   isotopeFilters.on('click', function(e){
+    /*
+        [3] Make filter links work
+     */
+    isotopeFilters.on('click', function(e){
+
+        var value = $(this).attr('data-filter');
+
         e.preventDefault();
-        isotopeContainer.isotope({filter: $(this).attr('data-filter')});
+        isotopeContainer.isotope({filter: value});
         isotopeFilters.attr('data-active', 'false');
         $(this).attr('data-active', 'true');
+
+        /*
+            Tracking will be enabled for production sites only
+         */
+        if(Config.environment == 'production'){
+            _paq.push(['trackEvent', 'Filter', (value == '*') ? 'Reset' : 'Set', (value !== '*') ? value : '']);
+        }
+
     });
 
 

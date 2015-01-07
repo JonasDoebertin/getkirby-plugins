@@ -1,0 +1,45 @@
+Title: Footnotes
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-01-07
+
+----
+
+Subtitle: Add Footnotes to Your Texts
+
+----
+
+Featured: false
+
+----
+
+Icon: text
+
+----
+
+Description: This plugin adds some basic footnote functionalities. Simply add the references to your Texts and the plugin will handle the rest for you.
+
+----
+
+Type: kirbytext, field
+
+----
+
+Authorname: Nico Hoffmann
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://www.distantnative.com/
+
+----
+
+Downloadlink: https://github.com/distantnative/kirby-footnotes

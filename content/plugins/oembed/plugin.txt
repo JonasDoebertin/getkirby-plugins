@@ -1,0 +1,45 @@
+Title: oEmbed
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-01-07
+
+----
+
+Subtitle: Embed Youtube & Vimeo Videos
+
+----
+
+Featured: true
+
+----
+
+Icon: video
+
+----
+
+Description: This plugin enables Kirby to display embeds of several media sites (e.g. YouTube, Vimeo, Soundcloud) by only providing the URL to the medium. It also features lazy loading videos as well as extensive caching.
+
+----
+
+Type: kirbytext, field
+
+----
+
+Authorname: Nico Hoffmann
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://nhoffmann.com/
+
+----
+
+Downloadlink: https://github.com/distantnative/kirby-oembed

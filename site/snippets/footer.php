@@ -4,20 +4,7 @@
                 <p class="footer__credits">
                     Made by <a href="http://jd-powered.net/" rel="author">&raquo;jd&laquo; powered</a> using <i class="footer__icon  icon--kirby"></i> and and a whole lot of <i class="footer__icon  icon--coffee"></i>.
                 </p>
-                <ul class="footer__nav  list-inline  footer-nav" role="navigation">
-                    <li class="footer-nav__item">
-                        <a href="http://getkirby.com/forum/" target="_blank">Official Kirby Forums</a>
-                    <!--</li>-->
-                    <li class="footer-nav__item">
-                        <a href="http://getkirby.com/buy" target="_blank">Buy Kirby Licenses</a>
-                        <!--</li>-->
-                    <li class="footer-nav__item">
-                        <a href="http://getkirby-themes.com/" target="_blank">Kirby Themes</a>
-                        <!--</li>-->
-                    <li class="footer-nav__item">
-                        <a href="http://jd-powered.net/contact" target="_blank">Imprint</a>
-                    <!--</li>-->
-                </ul>
+                <?php snippet('components/footer-links') ?>
             </div>
         </footer>
 

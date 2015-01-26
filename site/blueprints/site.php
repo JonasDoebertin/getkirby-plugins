@@ -39,6 +39,21 @@ fields:
         label: Copyright
         type:  textarea
         width: 1/2
+    footerlinks:
+        label: Footer Links
+        type:  structure
+        entry: >
+            <strong>{{title}}</strong><br />
+            {{href}}
+        fields:
+            title:
+                label: Title
+                type:  text
+            href:
+                label: Link
+                type: url
+        width:  1/2
     googleverification:
         label: Google Site Verification Code
         type:  text
+        width: 1/2

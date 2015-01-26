@@ -74,3 +74,5 @@ Let's add some custom configuration options.
 
 c::set('environment', 'production');
 c::set('sitemap.ignore', array());
+
+c::set('app.new.duration', 30);

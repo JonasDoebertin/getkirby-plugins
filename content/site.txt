@@ -24,3 +24,20 @@ Social:
   username: @getkirbyplugins
   icon: twitter
   link: https://twitter.com/getkirbyplugins
+
+----
+
+Footerlinks: 
+
+- 
+  title: Official Kirby Forums
+  href: http://getkirby.com/forum/
+- 
+  title: Buy Kirby Licenses
+  href: http://getkirby.com/buy
+- 
+  title: Kirby Themes
+  href: http://getkirby-themes.com/
+- 
+  title: Imprint
+  href: http://jd-powered.net/contact

@@ -8,12 +8,12 @@ class CssClasses {
 
         if($plugin->featured()->bool())
         {
-            $classes .= ' plugin--featured ';
+            $classes .= ' ' . c::get('app.featured.class', 'plugin--featured') . ' ';
         }
 
-        if((strtotime($plugin->created()) + 60 * 60 * 24 * 14) > time())
+        if((strtotime($plugin->created()) + 60 * 60 * 24 * c::get('app.new.duration', 30)) > time())
         {
-            $classes .= ' plugin--new ';
+            $classes .= ' ' . c::get('app.new.class', 'plugin--new') . ' ';
         }
 
         return $classes . ' ] ';

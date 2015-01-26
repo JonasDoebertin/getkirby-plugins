@@ -9,8 +9,11 @@
                         <a href="http://getkirby.com/forum/" target="_blank">Official Kirby Forums</a>
                     <!--</li>-->
                     <li class="footer-nav__item">
-                        <a href="http://getkirby.com/buy" target="_blank">Buy Kirby 2 Licenses</a>
-                    <!--</li>-->
+                        <a href="http://getkirby.com/buy" target="_blank">Buy Kirby Licenses</a>
+                        <!--</li>-->
+                    <li class="footer-nav__item">
+                        <a href="http://getkirby-themes.com/" target="_blank">Kirby Themes</a>
+                        <!--</li>-->
                     <li class="footer-nav__item">
                         <a href="http://jd-powered.net/contact" target="_blank">Imprint</a>
                     <!--</li>-->

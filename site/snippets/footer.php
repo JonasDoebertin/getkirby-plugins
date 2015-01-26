@@ -21,8 +21,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')</script>
-        <script src="assets/js/plugins.@@1420621915651.min.js"></script>
-        <script src="assets/js/main.@@1420621915651.min.js"></script>
+        <script src="assets/js/plugins.@@1422302756196.min.js"></script>
+        <script src="assets/js/main.@@1422302756196.min.js"></script>
 
         <?php snippet('tools/tracking') ?>
 

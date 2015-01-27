@@ -18,6 +18,10 @@
 
             <?php endforeach ?>
 
+            <li class="[ layout__item  one-whole  lap-and-up-one-half  desk-one-third ] [ js-isotope-item ]">
+                <?php snippet('objects/themes') ?>
+            <!--</li>-->
+
         </ul>
     </div>
 </section>

@@ -4,6 +4,33 @@
 		{
 			"icon": {
 				"paths": [
+					"M922.857 0q40 0 70 26.571t30 66.571q0 36-25.714 86.286-189.714 359.429-265.714 429.714-55.429 52-124.571 52-72 0-123.714-52.857t-51.714-125.429q0-73.143 52.571-121.143l364.571-330.857q33.714-30.857 74.286-30.857zM403.429 590.857q22.286 43.429 60.857 74.286t86 43.429l0.571 40.571q2.286 121.714-74 198.286t-199.143 76.571q-70.286 0-124.571-26.571t-87.143-72.857-49.429-104.571-16.571-125.714q4 2.857 23.429 17.143t35.429 25.429 33.714 20.857 26.286 9.714q23.429 0 31.429-21.143 14.286-37.714 32.857-64.286t39.714-43.429 50.286-27.143 58.857-14.571 71.429-6z"
+				],
+				"attrs": [
+					{}
+				],
+				"isMulticolor": false,
+				"tags": [
+					"paint-brush"
+				],
+				"grid": 14
+			},
+			"attrs": [
+				{}
+			],
+			"properties": {
+				"order": 37,
+				"id": 0,
+				"prevSize": 28,
+				"code": 58905,
+				"name": "paint"
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
 					"M451.309 0l-451.309 256.323v512l451.309 256.323 451.309-256.323v-512l-451.309-256.323zM652.106 522.976l-126.547 68.439v9.039h126.547v98.784h-402.24v-98.784h126.547v-9.685l-126.547-67.793v-122.673l201.443 108.469 200.797-108.469v122.673z"
 				],
 				"attrs": [
@@ -29,7 +56,7 @@
 				"code": 58880,
 				"name": "kirby"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 0
 		},
 		{
@@ -52,7 +79,7 @@
 				"code": 58881,
 				"name": "coffee"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 1
 		},
 		{
@@ -77,7 +104,7 @@
 				"code": 58882,
 				"name": "image"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 2
 		},
 		{
@@ -103,7 +130,7 @@
 				"code": 58883,
 				"name": "video"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 3
 		},
 		{
@@ -127,7 +154,7 @@
 				"code": 58884,
 				"name": "tags"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 4
 		},
 		{
@@ -153,7 +180,7 @@
 				"code": 58885,
 				"name": "payment"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 5
 		},
 		{
@@ -178,7 +205,7 @@
 				"code": 58886,
 				"name": "location"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 6
 		},
 		{
@@ -204,7 +231,7 @@
 				"code": 58887,
 				"name": "calendar"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 7
 		},
 		{
@@ -228,7 +255,7 @@
 				"code": 58888,
 				"name": "mobile"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 8
 		},
 		{
@@ -255,7 +282,7 @@
 				"code": 58889,
 				"name": "users"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 9
 		},
 		{
@@ -278,7 +305,7 @@
 				"code": 58890,
 				"name": "quotes"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 10
 		},
 		{
@@ -303,7 +330,7 @@
 				"code": 58891,
 				"name": "time"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 11
 		},
 		{
@@ -328,7 +355,7 @@
 				"code": 58892,
 				"name": "search"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 12
 		},
 		{
@@ -356,7 +383,7 @@
 				"code": 58893,
 				"name": "generic"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 13
 		},
 		{
@@ -379,7 +406,7 @@
 				"code": 58894,
 				"name": "cloud"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 14
 		},
 		{
@@ -405,7 +432,7 @@
 				"code": 58895,
 				"name": "link"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 15
 		},
 		{
@@ -430,7 +457,7 @@
 				"code": 58896,
 				"name": "star"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 16
 		},
 		{
@@ -455,7 +482,7 @@
 				"code": 58897,
 				"name": "heart"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 17
 		},
 		{
@@ -485,7 +512,7 @@
 				"code": 58898,
 				"name": "loop"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 18
 		},
 		{
@@ -508,7 +535,7 @@
 				"code": 58899,
 				"name": "panel"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 19
 		},
 		{
@@ -531,7 +558,7 @@
 				"code": 58900,
 				"name": "formatting"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 20
 		},
 		{
@@ -556,7 +583,7 @@
 				"code": 58901,
 				"name": "text"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 21
 		},
 		{
@@ -579,7 +606,7 @@
 				"code": 58902,
 				"name": "markup"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 22
 		},
 		{
@@ -603,7 +630,7 @@
 				"code": 58903,
 				"name": "twitter"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 23
 		},
 		{
@@ -627,7 +654,7 @@
 				"code": 58904,
 				"name": "feed"
 			},
-			"setIdx": 0,
+			"setIdx": 3,
 			"iconIdx": 24
 		}
 	],

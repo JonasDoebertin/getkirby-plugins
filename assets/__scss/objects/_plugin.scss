@@ -10,6 +10,11 @@ $plugin-background:             #e3e1e1;
 $plugin-title-color:            $base-heading-color;
 $plugin-subtitle-color:         #525C63;
 
+$themes-background:             $base-link-color;
+$themes-title-color:            #ffffff;
+$themes-text-color:             #ffffff;
+$themes-button-color:           #ffffff;
+
 
 /**
  * #REGULAR PLUGIN
@@ -108,4 +113,18 @@ $plugin-subtitle-color:         #525C63;
 
     }
 
+}
+
+/**
+ * #THEMES SPECIAL
+ */
+.plugin--themes {
+    background-color: $themes-background;
+
+    .plugin__title,
+    .plugin__subtitle,
+    .plugin__description,
+    .plugin__links a {
+        color: $themes-text-color;
+    }
 }

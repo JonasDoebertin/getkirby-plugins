@@ -1,0 +1,45 @@
+Title: Uniform
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-02
+
+----
+
+Subtitle: Handle Web Form Actions
+
+----
+
+Featured: true
+
+----
+
+Description: A versatile and powerful plugin to handle web form actions, like sending contact forms by email (formerly known as »Contact Form«).
+
+----
+
+Type: general
+
+----
+
+Authorname: mzur
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://github.com/mzur
+
+----
+
+Downloadlink: https://github.com/mzur/kirby-uniform
+
+----
+
+Icon: panel

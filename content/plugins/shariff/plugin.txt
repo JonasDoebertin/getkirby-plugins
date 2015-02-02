@@ -1,0 +1,45 @@
+Title: Shariff
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-02
+
+----
+
+Subtitle: Social Share Button Privacy
+
+----
+
+Featured: false
+
+----
+
+Icon: twitter
+
+----
+
+Description: Include »Shariff« social media buttons with ease. Shariff, made by »c't magazin«, enables website users to share their favorite content without compromising their privacy.
+
+----
+
+Type: general
+
+----
+
+Authorname: Michael Fürmann
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://spicyweb.de/
+
+----
+
+Downloadlink: https://spicyhub.de/spicy-web/kirby-plugin-shariff

@@ -14,7 +14,7 @@ Subtitle: Embed Youtube & Vimeo Videos
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 

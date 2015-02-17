@@ -40,32 +40,37 @@ fields:
         label:    Icon
         type:     select
         default:  generic
+        sort:     asc
         options:
-            calendar: Calendar
-            cloud:      Cloud
-            coffee:     Coffee
-            feed:       Feed / RSS
-            formatting: Formatting
-            generic:    Generic
-            heart:      Heart
-            image:      Image
+            magic:      Magic
+            instagram:  Instagram Logo
+            share:      Sharing
+            paint:      Theme / Paint / Style
             kirby:      Kirby Logo
-            link:       Link / Anchor
-            location:   Location
-            loop:       Loop / Repeat / Retweet
-            markup:     Markup
-            mobile:     Mobile
-            panel:      Panel
-            payment:    Payment
-            quotes:     Quotes
-            search:     Search
-            star:       Star
-            tags:       Tags
-            text:       Text
-            time:       Time
-            twitter:    Twitter Logo
-            users:      Users
+            coffee:     Coffee
+            image:      Image
             video:      Video
+            tags:       Tags
+            payment:    Payment
+            location:   Location
+            calendar:   Calendar
+            mobile:     Mobile
+            users:      Users
+            quotes:     Quotes
+            time:       Time
+            search:     Search
+            generic:    Generic
+            cloud:      Cloud
+            link:       Link / Anchor
+            star:       Star
+            heart:      Heart
+            loop:       Loop / Repeat / Retweet
+            panel:      Panel
+            formatting: Formatting
+            text:       Text
+            markup:     Markup
+            twitter:    Twitter Logo
+            feed:       Feed / RSS
         width:    1/4
     description:
         label:    Description

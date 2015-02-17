@@ -1,0 +1,45 @@
+Title: KirbyGram
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-17
+
+----
+
+Subtitle: Connect To Instagram
+
+----
+
+Featured: true
+
+----
+
+Icon: image
+
+----
+
+Description: This Kirby Instagram plugin let's you embed your Instagram posts and statistics into your website without having to deal with APIs, oAuth and authorization. It couldn't be easier!
+
+----
+
+Type: general
+
+----
+
+Authorname: Paul Westerdale
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://github.com/PWesterdale
+
+----
+
+Downloadlink: https://github.com/PWesterdale/KirbyGram

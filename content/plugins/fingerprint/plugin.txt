@@ -1,0 +1,45 @@
+Title: Fingerprint
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-19
+
+----
+
+Subtitle: Effortless Cache Busting
+
+----
+
+Featured: false
+
+----
+
+Icon: markup
+
+----
+
+Description: Fingerprint takes your static files (like CSS, JS & Images) and adds a unique fingerprint based on their content to the url automatically. Busting the browser cache never was easier.
+
+----
+
+Type: general
+
+----
+
+Authorname: Iksi
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://www.iksi.cc/
+
+----
+
+Downloadlink: https://github.com/iksi/KirbyFingerprint

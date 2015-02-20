@@ -42,6 +42,7 @@ fields:
         default:  generic
         sort:     asc
         options:
+            music:      Audio / Music
             magic:      Magic
             instagram:  Instagram Logo
             share:      Sharing

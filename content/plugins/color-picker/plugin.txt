@@ -26,7 +26,7 @@ Description: A simple color picker panel field which makes use of the jQuery Min
 
 ----
 
-Type: field
+Type: panel
 
 ----
 

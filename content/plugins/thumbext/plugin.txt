@@ -1,0 +1,45 @@
+Title: ThumbExt
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-20
+
+----
+
+Subtitle: More Thumbnail Options
+
+----
+
+Featured: false
+
+----
+
+Icon: image
+
+----
+
+Description: Let's you generate retina-ready thumbnails in a single go. Also adds some more features to Kirbys included thumbnail functionality.
+
+----
+
+Type: general
+
+----
+
+Authorname: Jannik Beyerstedt
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: https://jannikbeyerstedt.de/
+
+----
+
+Downloadlink: https://github.com/jbeyerstedt/kirby-plugin-thumbExt

@@ -1,0 +1,45 @@
+Title: MinifyHTML
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-20
+
+----
+
+Subtitle: Where Performance Matters
+
+----
+
+Featured: false
+
+----
+
+Icon: markup
+
+----
+
+Description: After dropping in the »MinifyHTML« plugin, all your pages HTML code will be minified in the background before it get's send to the user.
+
+----
+
+Type: general
+
+----
+
+Authorname: Ian Cox
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://iancox.com/
+
+----
+
+Downloadlink: https://github.com/ian-cox/Kirby-MinifyHTML

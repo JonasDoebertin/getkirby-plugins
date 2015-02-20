@@ -1,0 +1,45 @@
+Title: Kudos
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-20
+
+----
+
+Subtitle: Let Users Give »Kudos«
+
+----
+
+Featured: false
+
+----
+
+Icon: heart
+
+----
+
+Description: Brings »Kudos«, an unobtrusive alternative to the classic social media likes, to your Kirby powered website or blog.
+
+----
+
+Type: general
+
+----
+
+Authorname: Jerome Arfouche
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://jerome-arfouche.com/
+
+----
+
+Downloadlink: https://github.com/hemorej/kirby-kudos

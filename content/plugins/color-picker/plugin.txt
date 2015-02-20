@@ -1,0 +1,45 @@
+Title: Color Picker
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-20
+
+----
+
+Subtitle: Color Pickers for your Blueprints
+
+----
+
+Featured: false
+
+----
+
+Icon: paint
+
+----
+
+Description: A simple color picker panel field which makes use of the jQuery MiniColors plugin. No more #hex value copy and pasting.
+
+----
+
+Type: field
+
+----
+
+Authorname: Ian Cox
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://iancox.com/
+
+----
+
+Downloadlink: https://github.com/ian-cox/Kirby-Color-Picker

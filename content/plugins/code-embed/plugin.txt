@@ -1,0 +1,45 @@
+Title: Code Embed
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-28
+
+----
+
+Subtitle: Embed Code Files with Ease
+
+----
+
+Featured: false
+
+----
+
+Icon: markup
+
+----
+
+Description: Don't mess up your content files with huge code blocks! This plugin let's you specify code files which will get embedded into code blocks within your content when rendering your page.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Thomas Fanninger
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://thomas.fanninger.at/
+
+----
+
+Downloadlink: https://github.com/fanningert/kirbycms-extension-code

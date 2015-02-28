@@ -1,0 +1,45 @@
+Title: HTML5 Video
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-28
+
+----
+
+Subtitle: Video from your Kirbytext
+
+----
+
+Featured: false
+
+----
+
+Icon: video
+
+----
+
+Description: This plugin adds a new »video« Kirbytext tag which enables you to embed your video clips easily and HTML5 compatible.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Thomas Fanninger
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://thomas.fanninger.at/
+
+----
+
+Downloadlink: https://github.com/fanningert/kirbycms-extension-video

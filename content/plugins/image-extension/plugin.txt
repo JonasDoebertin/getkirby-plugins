@@ -1,0 +1,45 @@
+Title: Image Replacement
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-02-28
+
+----
+
+Subtitle: Better Image Kirbytext
+
+----
+
+Featured: false
+
+----
+
+Icon: image
+
+----
+
+Description: This replacement  of the original »image« Kirbytext tag gives you a lot more control over the automatic thumbnail generation process. Also, it let's you insert whole galleries at once.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Thomas Fanninger
+
+----
+
+Downloadtitle: Documentation
+
+----
+
+Authorlink: http://thomas.fanninger.at/
+
+----
+
+Downloadlink: https://github.com/fanningert/kirbycms-extension-image

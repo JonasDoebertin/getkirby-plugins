@@ -1,0 +1,41 @@
+Title: Users Field
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-03-11
+
+----
+
+Subtitle: Simply Select Users
+
+----
+
+Featured: false
+
+----
+
+Icon: users
+
+----
+
+Description: A simple checkbox field for the Panel which lets you select users. All the users are shown except the users in the admin role. You can use this for authors on a blogpost or for user authentication.
+
+----
+
+Type: panel
+
+----
+
+Authorname: Roy Lodder
+
+----
+
+Authorlink: http://roylodder.com/
+
+----
+
+Downloadlink: https://github.com/roylodder/kirby-users-field

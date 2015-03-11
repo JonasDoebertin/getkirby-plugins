@@ -1,0 +1,41 @@
+Title: User Roles Field
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-03-11
+
+----
+
+Subtitle: Simply Select User Roles
+
+----
+
+Featured: false
+
+----
+
+Icon: users
+
+----
+
+Description: A simple checkbox field for the Panel which lets you select user roles. All the roles are shown except the admin role. You can use this for frontend authentication by role.
+
+----
+
+Type: panel
+
+----
+
+Authorname: Roy Lodder
+
+----
+
+Authorlink: http://roylodder.com/
+
+----
+
+Downloadlink: https://github.com/roylodder/kirby-roles-field

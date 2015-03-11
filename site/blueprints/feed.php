@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title:     Sitemap
+title:     Feed
 pages:     false
 files:     false
 preview:   false

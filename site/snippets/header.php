@@ -48,6 +48,7 @@
         <meta name="application-name" content="Kirby Plugins">
 
         <!-- misc -->
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="<?= url('feed') ?>" />
         <meta name="google-site-verification" content="<?= $site->googleverification() ?>" />
 
     </head>

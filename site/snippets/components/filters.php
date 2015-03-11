@@ -9,14 +9,17 @@
                     <a class="filters__item  js-isotope-filter" data-active="true" data-filter="*" href="#">All</a>
                 </li>
                 <li>
-                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-kirbytext" href="#">Kirbytext Extensions</a>
+                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-kirbytext" href="#">Kirbytext</a>
                 </li>
                 <li>
-                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-field" href="#">Field Extensions</a>
+                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-field" href="#">Page Content</a>
                 </li>
                 <li>
-                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-panel" href="#">Panel Extentions</a>
+                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-panel" href="#">Panel Fields</a>
                 </li>
+                <!--<li>
+                    <a class="filters__item  js-isotope-filter" data-active="false" data-filter=".js-isotope-item-widget" href="#">Panel Widgets</a>
+                </li>-->
             </ul>
         </nav>
 

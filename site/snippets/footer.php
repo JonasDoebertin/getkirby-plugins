@@ -2,7 +2,7 @@
         <footer class="section  section--footer  footer">
             <div class="section__wrap">
                 <p class="footer__credits">
-                    Made by <a href="http://jd-powered.net/" rel="author">&raquo;jd&laquo; powered</a> using <i class="footer__icon  icon--kirby"></i> and and a whole lot of <i class="footer__icon  icon--coffee"></i>.
+                    <?= $site->copyright()->html() ?>
                 </p>
                 <?php snippet('components/footer-links') ?>
             </div>

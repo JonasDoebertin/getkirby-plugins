@@ -1,0 +1,41 @@
+Title: Selector
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-03-11
+
+----
+
+Subtitle: Visual File Select Field
+
+----
+
+Featured: false
+
+----
+
+Icon: panel
+
+----
+
+Description: This additional panel field allows you to use an intuitive and versatile file selection field on your panel pages. Selecting multiple files is absolutely easy.
+
+----
+
+Type: panel
+
+----
+
+Authorname: Jonas Döbertin
+
+----
+
+Authorlink: http://jd-powered.net/
+
+----
+
+Downloadlink: https://github.com/storypioneers/kirby-selector

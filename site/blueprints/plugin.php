@@ -83,9 +83,10 @@ fields:
         type:     checkboxes
         options:
             general:   General Plugin
-            kirbytext: KirbyText Extension
-            field:     Field Extension
-            panel:     Panel Extension
+            kirbytext: KirbyText
+            field:     Page Content
+            panel:     Panel Field
+            widget:    Panel Widget
         width:    1/4
         columns:  1
     authorname:

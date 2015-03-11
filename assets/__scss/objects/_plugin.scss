@@ -30,25 +30,34 @@ $themes-button-color:           #ffffff;
 
     .plugin__icon {
         background: #ffffff;
+        color: #333333;
         border-radius: 50%;
         padding: 10px;
-        width: 52px;
+        width: 55px;
         @include font-size(32px, 1);
         display: inline-block;
         margin-bottom: $spacing-unit / 2;
-
     }
 
     .plugin__title {
         text-transform: uppercase;
-        color: $plugin-title-color;
         @include font-size(18px);
         margin: 0;
+
+        a {
+            color: $plugin-title-color;
+        }
     }
 
     .plugin__subtitle {
         color: $plugin-subtitle-color;
         display: inline-block;
+        //margin-bottom: $spacing-unit / 4;
+    }
+
+    .plugin__author {
+        @include font-size(14px, false);
+        line-height: 14px * 1.25;
         margin-bottom: $spacing-unit / 2;
     }
 
@@ -62,12 +71,9 @@ $themes-button-color:           #ffffff;
         overflow: hidden;
     }
 
-    .plugin__links {}
-
-        .plugin__links li + li:before {
-            content: '\00A0\00A0\00B7\00A0';
-            font-weight: bold;
-        }
+    .plugin__link {
+        margin: 0;
+    }
 
 /**
  * #FEATURED PLUGIN

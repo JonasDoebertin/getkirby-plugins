@@ -93,11 +93,6 @@ fields:
         type:     text
         required: true
         width:    1/2
-    downloadtitle:
-        label:    Download Link Title
-        type:     text
-        required: true
-        width:    1/2
     authorlink:
         label:    Author Link
         type:     url
@@ -107,4 +102,3 @@ fields:
         label:    Download Link
         type:     url
         required: true
-        width:    1/2

@@ -1,6 +1,13 @@
 Plugins & Extensions for Kirby 2
 ================================
 
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+
 This repository contains the source files for getkirby-plugins.com
 
 Helpful Commands

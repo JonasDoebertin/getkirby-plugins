@@ -31,7 +31,7 @@ Footerlinks:
 
 - 
   title: Official Kirby Forums
-  href: http://getkirby.com/forum/
+  href: http://forum.getkirby.com/
 - 
   title: Buy Kirby Licenses
   href: http://getkirby.com/buy

@@ -127,6 +127,10 @@ $themes-button-color:           #ffffff;
 .plugin--themes {
     background-color: $themes-background;
 
+    .plugin__subtitle {
+        margin-bottom: 19px + 12px;
+    }
+
     .plugin__title,
     .plugin__subtitle,
     .plugin__description,

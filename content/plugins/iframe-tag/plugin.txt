@@ -1,0 +1,41 @@
+Title: iFrame Tag
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-03-24
+
+----
+
+Subtitle: Embed iFrames
+
+----
+
+Featured: false
+
+----
+
+Icon: markup
+
+----
+
+Description: This simple but useful Kirbytext tag let's you embed iFrames without the need to touch any HTML code.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Daniel Rivers
+
+----
+
+Authorlink: http://danielrivers.com/
+
+----
+
+Downloadlink: https://github.com/DanielRivers/KirbyCMS-Plugins

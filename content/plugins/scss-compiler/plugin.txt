@@ -1,0 +1,41 @@
+Title: SCSS
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-03-24
+
+----
+
+Subtitle: Automatic SCSS Compiler
+
+----
+
+Featured: false
+
+----
+
+Icon: paint
+
+----
+
+Description: A Kirby integrated preprocessor for SCSS files. Built using the »scssphp« library, this Kirby 2 plugin will automatically process and compile your SCSS files when changed.
+
+----
+
+Type: general
+
+----
+
+Authorname: Bart van de Biezen
+
+----
+
+Authorlink: http://bartvandebiezen.com/en
+
+----
+
+Downloadlink: https://github.com/bartvandebiezen/kirby-v2-scssphp

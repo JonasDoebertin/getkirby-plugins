@@ -1,0 +1,41 @@
+Title: PayPal Tag
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-03-24
+
+----
+
+Subtitle: Embed PayPal Buttons
+
+----
+
+Featured: false
+
+----
+
+Icon: markup
+
+----
+
+Description: This Kirbytext tag enables you to embed PayPal »Buy« buttons by entering nothing more than the button ID.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Daniel Rivers
+
+----
+
+Authorlink: http://www.danielrivers.com/
+
+----
+
+Downloadlink: https://github.com/DanielRivers/KirbyCMS-Plugins

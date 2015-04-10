@@ -1,0 +1,41 @@
+Title: Visual Markdown Editor
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-04-10
+
+----
+
+Subtitle: Intuitive Markdown Editing
+
+----
+
+Featured: false
+
+----
+
+Icon: formatting
+
+----
+
+Description: This Panel field extension provides an intuitiv and visual markdown editor field with markdown highlighting. It also features a distraction free full screen mode.
+
+----
+
+Type: panel
+
+----
+
+Authorname: Jonas Döbertin
+
+----
+
+Authorlink: http://jd-powered.net
+
+----
+
+Downloadlink: https://github.com/JonasDoebertin/kirby-visual-markdown

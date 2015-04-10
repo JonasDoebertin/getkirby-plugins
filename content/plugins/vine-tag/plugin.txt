@@ -1,0 +1,41 @@
+Title: Vine Tag
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-04-10
+
+----
+
+Subtitle: Embed Vine Posts
+
+----
+
+Featured: false
+
+----
+
+Icon: markup
+
+----
+
+Description: Embed your Vine posts without the need to copy, paste and adjust any HTML markup.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Marc Zobec
+
+----
+
+Authorlink: http://marczobec.com/
+
+----
+
+Downloadlink: https://gist.github.com/marczobec/f6c319b85b8cd24ea6ca

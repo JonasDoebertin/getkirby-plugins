@@ -1,0 +1,41 @@
+Title: Table of Contents
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-05-05
+
+----
+
+Subtitle: Auto-Generated TOCs
+
+----
+
+Featured: false
+
+----
+
+Icon: text
+
+----
+
+Description: If you're looking for a way to auto-generate a »Table of Contents« for your long post/pages based on the contents headlines, then you should check this out.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Philipp Mundhenk
+
+----
+
+Authorlink: http://www.mundhenk.org
+
+----
+
+Downloadlink: https://github.com/PhilippMundhenk/Kirby-Table-of-Contents

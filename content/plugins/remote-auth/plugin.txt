@@ -14,7 +14,7 @@ Subtitle: Implement 3rd Party Login Services
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 
@@ -31,10 +31,6 @@ Type: general
 ----
 
 Authorname: Sebastian Müller
-
-----
-
-Downloadtitle: Documentation
 
 ----
 

@@ -14,7 +14,7 @@ Subtitle: Intuitive Markdown Editing
 
 ----
 
-Featured: false
+Featured: true
 
 ----
 
@@ -22,7 +22,7 @@ Icon: formatting
 
 ----
 
-Description: This Panel field extension provides an intuitiv and visual markdown editor field with markdown highlighting. It also features a distraction free full screen mode.
+Description: This Panel field extension provides an intuitiv and visual markdown editor field with markdown and Kirbytext highlighting and customizable toolbar buttons. It also features a distraction free full screen mode.
 
 ----
 

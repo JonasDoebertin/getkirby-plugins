@@ -1,0 +1,41 @@
+Title: BibTex
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-05-05
+
+----
+
+Subtitle: Embedable Publication Lists
+
+----
+
+Featured: false
+
+----
+
+Icon: text
+
+----
+
+Description: Store all your publications in a »BibTex« file and use this plugin to embed a nice auto-generated publication list into your content.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Philipp Mundhenk
+
+----
+
+Authorlink: http://www.mundhenk.org
+
+----
+
+Downloadlink: https://github.com/PhilippMundhenk/Kirby-BibTeX

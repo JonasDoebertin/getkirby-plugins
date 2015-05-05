@@ -1,0 +1,37 @@
+Title: WYSIWYG Editor
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-05-05
+
+----
+
+Subtitle: Medium.com like WYSIWYG Editor
+
+----
+
+Featured: false
+
+----
+
+Icon: text
+
+----
+
+Description: An easy to use and intuitive »what you see is what you get« content editor for the Panel, similar to the »medium.com« editor.
+
+----
+
+Authorname: digital storytelling pioneers
+
+----
+
+Authorlink: http://www.story-pioneers.com/
+
+----
+
+Downloadlink: https://github.com/storypioneers/kirby-wysiwyg

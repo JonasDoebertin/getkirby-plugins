@@ -14,7 +14,7 @@ Subtitle: Connect To Instagram
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 
@@ -31,10 +31,6 @@ Type: general
 ----
 
 Authorname: Paul Westerdale
-
-----
-
-Downloadtitle: Documentation
 
 ----
 

@@ -10,7 +10,7 @@ Created: 2015-05-05
 
 ----
 
-Subtitle: Embedable Publication Lists
+Subtitle: Embeddable Publication Lists
 
 ----
 

@@ -1,0 +1,41 @@
+Title: Cachebuster
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-23
+
+----
+
+Subtitle: Automate JS and CSS Cache Busting
+
+----
+
+Featured: true
+
+----
+
+Icon: generic
+
+----
+
+Description: This plugin will add modification timestamps to your CSS and JS files, as long as they are embedded with the css() and js() helpers.
+
+----
+
+Type: general
+
+----
+
+Authorname: Bastian Allgeier
+
+----
+
+Authorlink: http://bastianallgeier.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/tree/master/cachebuster

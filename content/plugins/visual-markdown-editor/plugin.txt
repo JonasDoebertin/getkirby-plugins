@@ -14,7 +14,7 @@ Subtitle: Intuitive Markdown Editing
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 

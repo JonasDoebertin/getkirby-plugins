@@ -14,7 +14,7 @@ Subtitle: Visual File Select Field
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 

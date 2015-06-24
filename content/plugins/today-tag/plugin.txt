@@ -1,0 +1,41 @@
+Title: Today Tag
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-23
+
+----
+
+Subtitle: Easily Output the Current Day
+
+----
+
+Featured: false
+
+----
+
+Icon: calendar
+
+----
+
+Description: A simple tag for Kirby CMS which lets you output the current day dynamically. It's multi-language ready and it has some options.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Roy Lodder
+
+----
+
+Authorlink: http://roylodder.com/
+
+----
+
+Downloadlink: https://github.com/roylodder/kirby-today

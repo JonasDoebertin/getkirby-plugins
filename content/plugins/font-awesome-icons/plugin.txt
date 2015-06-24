@@ -1,0 +1,41 @@
+Title: Font Awesome Icons
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-24
+
+----
+
+Subtitle: Awesome Icons for your Site
+
+----
+
+Featured: false
+
+----
+
+Icon: paint
+
+----
+
+Description: This is a simple plugin to integrate Font Awesome icons in your Kirby website. Add icons to your content with a simple Kirbytext tag.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Thies Hagedorn
+
+----
+
+Authorlink: https://github.com/ThiesHagedorn
+
+----
+
+Downloadlink: https://github.com/ThiesHagedorn/KirbyIconPlugin

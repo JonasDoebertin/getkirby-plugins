@@ -1,0 +1,41 @@
+Title: Subpagelist
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-24
+
+----
+
+Subtitle: Keep Track of your Subpages
+
+----
+
+Featured: false
+
+----
+
+Icon: panel
+
+----
+
+Description: With this field plugin for Kirby 2 you can display the list of subpages in the main column of the panel. Simply add the new field „subpagelist” to your blueprints.
+
+----
+
+Type: panel
+
+----
+
+Authorname: Flo Kosiol
+
+----
+
+Authorlink: https://github.com/flokosiol
+
+----
+
+Downloadlink: https://github.com/flokosiol/kirby-subpagelist

@@ -83,7 +83,7 @@ gulp.task('timestamps', function() {
 /*
     Task: Watcher
  */
-gulp.task('watch', function() {
+gulp.task('watch', ['js', 'css'], function() {
     gulp.watch(scssPaths, ['css']);
     gulp.watch(jsPaths, ['js']);
 });

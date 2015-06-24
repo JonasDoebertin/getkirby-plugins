@@ -10,6 +10,8 @@ $plugin-background:             #e3e1e1;
 $plugin-title-color:            $base-heading-color;
 $plugin-subtitle-color:         #525C63;
 
+$twitter-background:            #55acee;
+
 $themes-background:             $base-link-color;
 $themes-title-color:            #ffffff;
 $themes-text-color:             #ffffff;
@@ -119,6 +121,65 @@ $themes-button-color:           #ffffff;
 
     }
 
+}
+
+/**
+ * #TWITTER SPECIAL
+ */
+.plugin--twitter {
+    background-color: $twitter-background;
+    padding: $spacing-unit ($spacing-unit / 2);
+
+    .plugin__icon {
+        margin-bottom: $spacing-unit;
+    }
+
+    .plugin__description {
+        font-size: 0.9em;
+        height: 163px;
+        padding-top: 0.9em;
+
+        a {
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+    }
+
+    .plugin__title,
+    .plugin__subtitle,
+    .plugin__description,
+    .plugin__description a,
+    .plugin__links a {
+        color: $themes-text-color;
+    }
+
+    @include media-query(portable) {
+
+        .plugin__description {
+            @include font-size(18px);
+            height: auto;
+            padding-top: 0;
+
+            a {
+                @include font-size(18px);
+            }
+        }
+    }
+
+    @include media-query(palm) {
+
+        .plugin__description {
+            font-size: 0.9em;
+            height: auto;
+            padding-top: 0;
+
+            a {
+                font-size: 0.9em;
+            }
+        }
+
+    }
 }
 
 /**

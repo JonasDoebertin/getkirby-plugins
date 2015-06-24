@@ -13,11 +13,15 @@
             ?>
             <?php foreach($plugins as $plugin): ?>
 
-                <li class="layout__item  one-whole  lap-and-up-one-half">
+                <li class="layout__item  one-whole  lap-and-up-one-half desk-two-fifths">
                     <?php snippet('objects/plugin', ['plugin' => $plugin]) ?>
                 <!--</li>-->
 
             <?php endforeach ?>
+
+            <li class="layout__item  one-whole  lap-and-up-one-whole desk-one-fifth">
+                <?php snippet('objects/twitter') ?>
+            <!--</li>-->
 
         </ul>
     </div>

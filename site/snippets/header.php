@@ -22,8 +22,8 @@
         </script>
 
         <!-- styles -->
-        <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600') ?>
-        <?= css('/assets/css/main.@@1435134365524.css') ?>
+        <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Source+Code+Pro:500') ?>
+        <?= css('/assets/css/main.@@1435138134835.css') ?>
 
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="<?= url('/assets/images/favicons/apple-touch-icon-57x57.png') ?>">

@@ -25,7 +25,7 @@
                 <h3 class="info__headline">
                     Plugin Meta
                 </h3>
-                <dl>
+                <dl class="report__meta">
                     <dt class="info__meta__item  info__meta__item--inline">Author</dt>
                     <dd><a href="<?= $page->authorlink() ?>" rel="author nofollow"><?= $page->authorname()->html() ?></a></dd>
 
@@ -42,6 +42,9 @@
                     <dd><?= $page->description()->html() ?></dd>
 
                 </dl>
+                <p class="info__report">
+                    <a href="https://docs.google.com/forms/d/15ksJbVeFx6PhI1vuOdvdKQguRL8lNtQ9PA2N0G5v_E0/viewform?entry.372255256=<?= $page->url() ?>" rel="nofollow" target="_blank">Report Changes</a>
+                </p>
             <!-- </li> -->
 
         </ul>

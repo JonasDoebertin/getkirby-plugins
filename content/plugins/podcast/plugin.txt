@@ -1,0 +1,41 @@
+Title: Podcast
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-24
+
+----
+
+Subtitle: The Definitive Podcast Plugin
+
+----
+
+Featured: false
+
+----
+
+Icon: music
+
+----
+
+Description: Now you can use your favorite CMS for podcasting. This plugin for Kirby creates a RSS-podcast-feed, scans for MP3 files and their length and size.
+
+----
+
+Type: general
+
+----
+
+Authorname: Maurice Renck
+
+----
+
+Authorlink: http://www.maurice-renck.de
+
+----
+
+Downloadlink: https://www.maurice-renck.de/en/projects/kirby-podcast-plugin

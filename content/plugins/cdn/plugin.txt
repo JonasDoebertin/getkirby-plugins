@@ -1,0 +1,41 @@
+Title: CDN
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-24
+
+----
+
+Subtitle: Easy CDN
+
+----
+
+Featured: true
+
+----
+
+Icon: generic
+
+----
+
+Description: This plugin will rewrite all URLs to assets, files in the content folder and thumbnails to direct to a CDN while being very configurable.
+
+----
+
+Type: general
+
+----
+
+Authorname: Bastian Allgeier
+
+----
+
+Authorlink: http://bastianallgeier.com/
+
+----
+
+Downloadlink: https://github.com/getkirby/plugins/tree/master/cdn

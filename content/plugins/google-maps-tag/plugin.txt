@@ -1,0 +1,41 @@
+Title: Google Maps Tag
+
+----
+
+Draft: false
+
+----
+
+Created: 2015-06-24
+
+----
+
+Subtitle: Google Maps Kirbytext Tag
+
+----
+
+Featured: false
+
+----
+
+Icon: location
+
+----
+
+Description: A Kirbytext tag to integrate Google Maps API into your website.
+
+----
+
+Type: kirbytext
+
+----
+
+Authorname: Thomas Fanninger
+
+----
+
+Authorlink: http://thomas.fanninger.at/
+
+----
+
+Downloadlink: https://github.com/fanningert/kirbycms-extension-gmaps

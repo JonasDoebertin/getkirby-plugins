@@ -1,0 +1,63 @@
+/**
+ * $INFO
+ */
+
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--info {}
+
+.section--info .section__wrap {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query(lap-and-up) {
+        padding-left: ($spacing-unit * 5);
+        padding-right: ($spacing-unit * 5);
+    }
+}
+
+/**
+ * #INFO
+ */
+.info {}
+
+    .info__headline{}
+
+    .info__description {
+
+        pre {
+            background: white;
+            border-radius: $base-box-round / 2;
+
+            code {
+                padding: 6px 10px;
+                display: block;
+            }
+        }
+    }
+
+    .info__meta__item {
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        clear: both;
+
+        & + dd {
+            margin: 0;
+        }
+    }
+
+    .info__meta__item--inline {
+        display: inline;
+        float: left;
+
+
+        & + dd {
+            display: inline;
+            float: right;
+            margin-bottom: ($spacing-unit / 2);
+        }
+    }

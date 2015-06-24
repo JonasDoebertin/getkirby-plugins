@@ -32,12 +32,38 @@ c::set('routes', array(
     /*
         SITEMAP
         =======
-        1. Reroute calls to "/sitemap.xml" to "/sitemap"
+        1. Reroute calls to "/sitemap" to "/sitemap.xml"
+        2. Return "/sitemap" when fetching "sitemap.xml"
      */
+    array(
+        'pattern' => 'sitemap',
+        'action'  => function() {
+            go('sitemap.xml');
+        }
+    ),
+
     array(
         'pattern' => 'sitemap.xml',
         'action'  => function() {
             return site()->visit('sitemap');
+        }
+    ),
+
+    /*
+        PLUGIN PAGES
+        ============
+     */
+    array(
+        'pattern' => 'plugin/(:all)',
+        'action' => function($slug) {
+
+            // Check if there's a plugin with this slug
+            $plugin = page('plugins')->find($slug);
+            if ($plugin !== false) {
+                return site()->visit('plugins/' . $slug);
+            }
+
+            return site()->visit('error');
         }
     ),
 

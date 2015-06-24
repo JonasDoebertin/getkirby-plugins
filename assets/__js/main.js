@@ -19,6 +19,13 @@ jQuery(function($) {
         watch: 'window'
     });
 
+    /**
+     * #HIGHLIGHT.JS
+     */
+    $('pre code').each(function(index, block) {
+        hljs.highlightBlock(block);
+    });
+
 
     /**
      * #ISOTOPE

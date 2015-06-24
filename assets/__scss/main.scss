@@ -66,9 +66,12 @@
 @import "components/featured";
 @import "components/filters";
 @import "components/plugins";
-@import "components/error";
 @import "components/addplugin";
 @import "components/footer";
+@import "components/title";
+@import "components/info";
+@import "components/comments";
+@import "components/error";
 
 
 /**
@@ -78,3 +81,4 @@
 $inuit-use-fractions: false;
 @import "../__vendor/inuit-widths/trumps.widths";
 @import "../__vendor/inuit-widths-responsive/trumps.widths-responsive";
+@import "trumps/syntax";

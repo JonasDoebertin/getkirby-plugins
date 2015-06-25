@@ -38,4 +38,4 @@ Authorlink: http://danielrivers.com/
 
 ----
 
-Downloadlink: https://github.com/DanielRivers/KirbyCMS-Plugins
+Repository: https://github.com/DanielRivers/KirbyCMS-Plugins

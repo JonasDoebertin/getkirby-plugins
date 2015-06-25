@@ -42,4 +42,4 @@ Authorlink: https://github.com/lekkerduidelijk
 
 ----
 
-Downloadlink: https://github.com/lekkerduidelijk/kirby-geolocation-field
+Repository: https://github.com/lekkerduidelijk/kirby-geolocation-field

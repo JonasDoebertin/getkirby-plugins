@@ -38,4 +38,4 @@ Authorlink: http://marczobec.com/
 
 ----
 
-Downloadlink: https://gist.github.com/marczobec/f6c319b85b8cd24ea6ca
+Repository: https://gist.github.com/marczobec/f6c319b85b8cd24ea6ca

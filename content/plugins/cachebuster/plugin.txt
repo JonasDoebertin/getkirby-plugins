@@ -38,7 +38,7 @@ Authorlink: http://bastianallgeier.com/
 
 ----
 
-Downloadlink: https://github.com/getkirby/plugins/tree/master/cachebuster
+Repository: https://github.com/getkirby/plugins/tree/master/cachebuster
 
 ----
 

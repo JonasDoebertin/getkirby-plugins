@@ -42,4 +42,4 @@ Authorlink: http://roylodder.com/
 
 ----
 
-Downloadlink: https://github.com/getkirby/plugins/tree/master/readingtime
+Repository: https://github.com/getkirby/plugins/tree/master/readingtime

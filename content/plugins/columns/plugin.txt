@@ -42,4 +42,4 @@ Authorlink: http://getkirby.com/
 
 ----
 
-Downloadlink: https://github.com/getkirby/plugins/tree/master/columns
+Repository: https://github.com/getkirby/plugins/tree/master/columns

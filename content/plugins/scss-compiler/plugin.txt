@@ -38,4 +38,4 @@ Authorlink: http://bartvandebiezen.com/en
 
 ----
 
-Downloadlink: https://github.com/bartvandebiezen/kirby-v2-scssphp
+Repository: https://github.com/bartvandebiezen/kirby-v2-scssphp

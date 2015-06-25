@@ -42,4 +42,4 @@ Authorlink: http://nhoffmann.com/
 
 ----
 
-Downloadlink: https://github.com/distantnative/kirby-oembed
+Repository: https://github.com/distantnative/kirby-oembed

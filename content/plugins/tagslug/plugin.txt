@@ -42,4 +42,4 @@ Authorlink: http://www.studiodumbar.com/
 
 ----
 
-Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/tagslug
+Repository: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/tagslug

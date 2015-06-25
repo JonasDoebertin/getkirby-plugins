@@ -42,4 +42,4 @@ Authorlink: https://github.com/ausminternet
 
 ----
 
-Downloadlink: https://github.com/ausminternet/blogprint
+Repository: https://github.com/ausminternet/blogprint

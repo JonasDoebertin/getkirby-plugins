@@ -42,4 +42,4 @@ Authorlink: http://iancox.com/
 
 ----
 
-Downloadlink: https://github.com/ian-cox/Kirby-MinifyHTML
+Repository: https://github.com/ian-cox/Kirby-MinifyHTML

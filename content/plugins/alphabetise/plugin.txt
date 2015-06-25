@@ -42,4 +42,4 @@ Authorlink: http://shoesforindustry.net/
 
 ----
 
-Downloadlink: https://github.com/shoesforindustry/kirbycms-extensions/tree/master/plugins/alphabetise
+Repository: https://github.com/shoesforindustry/kirbycms-extensions/tree/master/plugins/alphabetise

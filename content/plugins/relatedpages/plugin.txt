@@ -34,7 +34,7 @@ Authorlink: https://github.com/Adspectus/
 
 ----
 
-Downloadlink: https://github.com/Adspectus/plugins/tree/master/relatedpages
+Repository: https://github.com/Adspectus/plugins/tree/master/relatedpages
 
 ----
 

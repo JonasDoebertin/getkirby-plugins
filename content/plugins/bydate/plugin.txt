@@ -42,4 +42,4 @@ Authorlink: http://fvsch.com/
 
 ----
 
-Downloadlink: https://github.com/fvsch/kirby-bydate
+Repository: https://github.com/fvsch/kirby-bydate

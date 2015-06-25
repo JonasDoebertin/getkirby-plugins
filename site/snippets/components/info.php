@@ -9,7 +9,10 @@
                     Additional Information
                 </h3>
                 <div class="info__description">
-                    <?php if (!$page->text()->empty()): ?>
+
+                    <?php if ($info = github()->info($page->repository())): ?>
+                        <?= $info ?>
+                    <?php elseif (!$page->text()->empty()): ?>
                         <?= $page->text()->kirbytext() ?>
                     <?php else: ?>
                         <p>
@@ -29,7 +32,7 @@
                     <dt class="info__meta__item  info__meta__item--inline">Author</dt>
                     <dd><a href="<?= $page->authorlink() ?>" rel="author nofollow"><?= $page->authorname()->html() ?></a></dd>
 
-                    <?php if(!$page->repository()->empty()): ?>
+                    <?php if (!$page->repository()->empty()): ?>
                         <dt class="info__meta__item  info__meta__item--inline">
                             Repo
                         </dt>
@@ -40,7 +43,7 @@
                         </dd>
                     <?php endif ?>
 
-                    <?php if(!$page->website()->empty()): ?>
+                    <?php if (!$page->website()->empty()): ?>
                         <dt class="info__meta__item  info__meta__item--inline">
                             Website
                         </dt>
@@ -51,8 +54,16 @@
                         </dd>
                     <?php endif ?>
 
-                    <!-- <dt class="info__meta__item  info__meta__item--inline">Version</dt>
-                    <dd><em>Unknown</em></dd> -->
+                    <dt class="info__meta__item  info__meta__item--inline">
+                        Version
+                    </dt>
+                    <dd>
+                        <?php if ($version = github()->release($page->repository())): ?>
+                            <?= $version ?>
+                        <?php else: ?>
+                            <em>Unknown</em>
+                        <?php endif ?>
+                    </dd>
 
                     <dt class="info__meta__item  info__meta__item--inline">Added</dt>
                     <dd><?= date('j M Y', strtotime($page->created())) ?></dd>

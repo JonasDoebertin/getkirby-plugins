@@ -13,6 +13,8 @@ thumbs/*
 # Exclude cache
 site/cache/*
 !site/cache/index.html
+!site/cache/github-cache/index.html
+!site/cache/github-client/index.html
 
 
 ############### Node ###############
@@ -96,3 +98,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+/vendor/

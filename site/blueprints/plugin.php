@@ -29,7 +29,9 @@ fields:
         buttons:  false
     text:
         label:    Main Text
-        type:     textarea
+        type:     markdown
+        header1:  h4
+        header2:  h5
         required: true
 
     headline3:

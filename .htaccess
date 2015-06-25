@@ -298,6 +298,11 @@ FileETag None
     RewriteEngine on
     # RewriteBase /mysite
 
+    # enforce a non-trailing-slash policy
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
     # block text files in the content folder from being accessed directly
     RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
 

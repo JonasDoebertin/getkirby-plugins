@@ -32,8 +32,8 @@
                     <dt class="info__meta__item  info__meta__item--inline">Docs</dt>
                     <dd><a href="<?= $page->downloadlink() ?>" rel="nofollow"><?= Url::host($page->downloadlink()) ?></a></dd>
 
-                    <dt class="info__meta__item  info__meta__item--inline">Version</dt>
-                    <dd><em>Unknown</em></dd>
+                    <!-- <dt class="info__meta__item  info__meta__item--inline">Version</dt>
+                    <dd><em>Unknown</em></dd> -->
 
                     <dt class="info__meta__item  info__meta__item--inline">Added</dt>
                     <dd><?= date('j M Y', strtotime($page->created())) ?></dd>
@@ -43,7 +43,7 @@
 
                 </dl>
                 <p class="info__report">
-                    <a href="https://docs.google.com/forms/d/15ksJbVeFx6PhI1vuOdvdKQguRL8lNtQ9PA2N0G5v_E0/viewform?entry.372255256=<?= $page->url() ?>" rel="nofollow" target="_blank">Report Changes</a>
+                    <a href="https://docs.google.com/forms/d/15ksJbVeFx6PhI1vuOdvdKQguRL8lNtQ9PA2N0G5v_E0/viewform?entry.372255256=http://getkirby-plugins.com/<?= $page->uid() ?>" rel="nofollow" target="_blank">Report Changes</a>
                 </p>
             <!-- </li> -->
 

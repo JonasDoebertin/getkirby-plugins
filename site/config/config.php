@@ -53,14 +53,31 @@ c::set('routes', array(
         PLUGIN PAGES
         ============
      */
+    // array(
+    //     'pattern' => 'plugins/(:all)',
+    //     'action'  => function($slug) {
+    //         go($slug);
+    //     }
+    // ),
     array(
-        'pattern' => 'plugin/(:all)',
+        'pattern' => '(.*)',
         'action' => function($slug) {
+            
+            // Check for homepage access
+            if (empty($slug) or ($slug === '/')) {
+                return site()->visit('home');
+            }
 
             // Check if there's a plugin with this slug
             $plugin = page('plugins')->find($slug);
             if ($plugin !== false) {
                 return site()->visit('plugins/' . $slug);
+            }
+
+            // Check if there's a page with that slug
+            $page = site()->find($slug);
+            if (($page !== false) and $page->isVisible()) {
+                return site()->visit($slug);
             }
 
             return site()->visit('error');

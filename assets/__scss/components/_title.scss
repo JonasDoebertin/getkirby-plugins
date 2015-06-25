@@ -23,7 +23,7 @@ $title-headline-color:          $base-heading-color;
     padding: $title-section-padding $spacing-unit;
     @extend %clearfix;
 
-    @include media-query(lap-and-up) {
+    @include media-query(desk) {
         padding: $title-section-padding ($spacing-unit * 5);
     }
 }

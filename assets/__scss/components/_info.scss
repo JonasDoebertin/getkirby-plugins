@@ -21,7 +21,7 @@ $info-button-horizontal-padding:    $spacing-unit / 1.5;
     padding-right: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query(lap-and-up) {
+    @include media-query(desk) {
         padding-left: ($spacing-unit * 5);
         padding-right: ($spacing-unit * 5);
     }
@@ -46,6 +46,14 @@ $info-button-horizontal-padding:    $spacing-unit / 1.5;
                 padding: 6px 10px;
                 display: block;
             }
+        }
+    }
+
+    .info__read-more {
+        margin-bottom: $spacing-unit;
+
+        @include media-query(lap-and-up) {
+            margin-bottom: 0;
         }
     }
 
@@ -85,10 +93,20 @@ $info-button-horizontal-padding:    $spacing-unit / 1.5;
             box-shadow: 0px 5px 0px $info-button-background-shade;
             text-align: center;
             display: block;
+            @include font-size(18px, false);
+            line-height: 1;
 
             &:hover {
                 background: $info-button-background-shade;
                 box-shadow: 0px 5px 0px shade($info-button-background-shade, 20%);
+            }
+
+            @include media-query(lap-and-up) {
+                @include font-size(14px, false);
+            }
+
+            @include media-query(desk) {
+                @include font-size(16px, false);
             }
         }
     }

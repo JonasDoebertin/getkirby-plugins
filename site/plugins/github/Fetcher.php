@@ -108,6 +108,7 @@ class Fetcher
         }
 
         // fetch from API, return false if unsuccessful
+        // TODO: use push queue to update data
         try {
             $this->client->clearHeaders();
             $result = $this->client->api('repo')->releases()->latest($user, $repo);

@@ -1,0 +1,17 @@
+Title: About the Plugin Pages
+
+----
+
+Subtitle: Understand the magic content fetching
+
+----
+
+Text: 
+
+After a plugin is added to (link: / text:  getkirby-plugins.com) it will get it's very own plugin page located at `getkirby-plugins.com/<plugin-slug>`. This page shows a nice overview of all important information about the plugin. Besides some static content (like the title, the subtitle and the brief description) that we added manually when adding your plugin to the site, there are also a few pieces of information that will be pulled in from external sources automatically. Below you may find everything you need to take advantage of this.
+
+#### Adding a version number to the sidebar
+
+The sidebar will display a small glance of the most important meta information of the plugin. You may have noticed that, for some plugins, it also displays a version number. Whenever a version number is present, it has been pulled in from Github automatically.
+
+To add a version number to your own plugin, make sure that **a)** it is hosted on Github and **b)** has it's own, dedicated repository. If these prerequisits are met, you just have to create (link: https://help.github.com/articles/about-releases/ text: releases) for your plugin. After you created a new regular release (prereleases won't be pulled in) check back at your plugins page on (link: http://getkirby-plugins.com text: getkirby-plugins.com) an hour or two later. You should now see your plugins version information in the pages sitebar.

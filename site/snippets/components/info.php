@@ -79,9 +79,14 @@
                     </a>
                 </p>
 
-                <p class="info__report">
-                    <a href="https://docs.google.com/forms/d/15ksJbVeFx6PhI1vuOdvdKQguRL8lNtQ9PA2N0G5v_E0/viewform?entry.372255256=http://getkirby-plugins.com/<?= $page->uid() ?>" rel="nofollow" target="_blank">Report Changes</a>
-                </p>
+                <ul class="info__links">
+                    <li>
+                        <a href="<?= url('about/plugin-pages') ?>" rel="help">About this Page</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/15ksJbVeFx6PhI1vuOdvdKQguRL8lNtQ9PA2N0G5v_E0/viewform?entry.372255256=http://getkirby-plugins.com/<?= $page->uid() ?>" rel="nofollow" target="_blank">Report Changes</a>
+                    </li>
+                </ul>
             <!-- </li> -->
 
         </ul>

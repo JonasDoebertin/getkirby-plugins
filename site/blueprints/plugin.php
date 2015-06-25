@@ -32,7 +32,6 @@ fields:
         type:     markdown
         header1:  h4
         header2:  h5
-        required: true
 
     headline3:
         label:    Author Information
@@ -47,10 +46,16 @@ fields:
         type:     url
         required: true
         width:    1/2
-    downloadlink:
-        label:    Download Link
+    repository:
+        label:    Repository Link
         type:     url
-        required: true
+        required: false
+        width:    1/2
+    website:
+        label:    Website Link
+        type:     url
+        required: false
+        width:    1/2
 
     headline4:
         label:    Settings

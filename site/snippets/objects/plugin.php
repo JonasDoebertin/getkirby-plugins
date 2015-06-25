@@ -4,7 +4,7 @@
         <i class="icon--<?= $plugin->icon()->html() ?>"></i>
     </a>
     <h2 class="plugin__title">
-        <a href="<?= $plugin->downloadlink()->html() ?>" rel="nofollow">
+        <a href="<?= url($plugin->uid()) ?>">
             <?= $plugin->title()->html() ?>
         </a>
     </h2>
@@ -21,7 +21,7 @@
     </p>
 
     <p class="plugin__link">
-        <a href="<?= $plugin->downloadlink()->html() ?>" rel="nofollow">
+        <a href="<?= $plugin->repository()->or($plugin->website()) ?>" rel="nofollow">
             Documentation
         </a>
     </p>

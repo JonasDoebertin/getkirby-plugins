@@ -15,3 +15,13 @@ After a plugin is added to (link: / text:  getkirby-plugins.com) it will get it'
 The sidebar will display a small glance of the most important meta information of the plugin. You may have noticed that, for some plugins, it also displays a version number. Whenever a version number is present, it has been pulled in from Github automatically.
 
 To add a version number to your own plugin, make sure that **a)** it is hosted on Github and **b)** has it's own, dedicated repository. If these prerequisits are met, you just have to create (link: https://help.github.com/articles/about-releases/ text: releases) for your plugin. After you created a new regular release (prereleases won't be pulled in) check back at your plugins page on (link: http://getkirby-plugins.com text: getkirby-plugins.com) an hour or two later. You should now see your plugins version information in the pages sitebar.
+
+#### Adding additional plugin information
+
+In addition to the version number in the sidebar, the plugin pages allow to set up a text containing additional information about the plugin. This is great for adding installation and usage instructions or documentation of the plugins options.
+
+To make it easier for everyone, you (as the plugins author) are able to specify the content of this section yourself. It's pretty easy and only requires very few steps. As with the version numbers, there are two prerequisits that have to be met: your plugin **a)** has to be hosted on Github and **b)** has to have it's own, dedicated repository.
+
+Now, to add the text to the plugin page, all you have to do is to add a `PLUGIN_INFO.md` file to the root of your plugins repository and fill it up with all the content you think is important. A good start would be to add installation and usage instructions. After adding the file to your repository, please allow one or two hours for (link: http://getkirby-plugins.com text: getkirby-plugins.com) to pull it in.
+
+Please note that we do have some filters in place that will strip out any malicious markup or things that might break the pages layout. If you keep to standard markdown you should experience any problems with this though. As another security precausion, we reserve the right to completely remove any malicious, harmful, insulting, pornographic or otherwise illegal content from the plugin pages.

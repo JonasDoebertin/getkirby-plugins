@@ -266,11 +266,13 @@ class Fetcher
 
         // purify html
         $config = HTMLPurifier_Config::createDefault();
+        $config->set('URI.Host', Url::host(site()->url()));
         $config->set('HTML.Allowed', 'a[href|target|rel|id],strong,b,em,i,strike,pre,code[class],p,ol,ul,li,br,h1,h2,h3,h4,h5,h6,img[src|alt]');
+        $config->set('HTML.Nofollow', true);
+        $config->set('Attr.AllowedRel', 'nofollow');
+
         $purifier = new HTMLPurifier($config);
         $safe = $purifier->purify($unsafe);
-
-        // TODO: Add rel="nofollow" to links
 
         return $safe;
     }

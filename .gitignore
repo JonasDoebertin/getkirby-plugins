@@ -16,12 +16,16 @@ site/cache/*
 !site/cache/github-cache/index.html
 !site/cache/github-client/index.html
 
+# Exclude logs
+site/logs/*
+!site/logs/index.html
+
 
 ############### Node ###############
 
 # Logs
-logs
-*.log
+/logs
+/*.log
 
 # Runtime data
 pids

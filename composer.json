@@ -3,7 +3,8 @@
     "description": "All Kirby CMS plugins in one place",
     "require": {
         "ezyang/htmlpurifier": "~4.6",
-        "knplabs/github-api": "~1.4"
+        "knplabs/github-api": "~1.4",
+        "monolog/monolog": "^1.14"
     },
     "license": "None",
     "authors": [

@@ -5,6 +5,8 @@ namespace jdpowered\Github;
 use Cache;
 use HTMLPurifier;
 use HTMLPurifier_Config;
+use Monolog\Logger;
+use Monolog\Handler\RotatingFileHandler;
 use Parsedown;
 use Url;
 use V;
@@ -19,11 +21,22 @@ class Fetcher
     const CACHE_LIFETIME = 60;
 
     /**
-     * @var Singleton The reference to *Singleton* instance of this class
+     * The *singleton* instance of this class.
+     * @var Fetcher
      */
-    private static $instance;
+    protected static $instance;
 
+    /**
+     * GitHub API Client.
+     * @var \Github\Client
+     */
     protected $client;
+
+    /**
+     * Instance of logger class.
+     * @var
+     */
+    protected $logger;
 
     /**
      * Protected constructor to prevent creating a new instance of the
@@ -31,15 +44,24 @@ class Fetcher
      */
     protected function __construct()
     {
+        // Set up API client
         $this->client = new \Github\Client(
             new \Github\HttpClient\CachedHttpClient(array(
-                'cache_dir' => kirby()->roots->cache() . DS . 'github-client',
+                'cache_dir' => kirby()->roots()->cache() . DS . 'github-api-client',
                 'timeout'   => 3,
             ))
         );
 
+        // Set up cache
         $this->cache = Cache::setup('File', array(
-            'root' => kirby()->roots->cache() . DS . 'github-cache',
+            'root' => kirby()->roots()->cache() . DS . 'github-fetcher-cache',
+        ));
+
+        // Set up logger
+        $this->logger = new Logger('log');
+        $this->logger->pushHandler(new RotatingFileHandler(
+            kirby()->roots()->site() . DS . 'logs' . DS . 'fetcher.log',
+            14
         ));
     }
 
@@ -113,9 +135,11 @@ class Fetcher
             $this->client->clearHeaders();
             $result = $this->client->api('repo')->releases()->latest($user, $repo);
             $release = (isset($result['tag_name'])) ? $result['tag_name'] : false;
+            $this->logger->addInfo('[' . $user . '/' . $repo . '] Updated releases');
         }
         catch (\Exception $e) {
             $release = false;
+            $this->logger->addWarning('[' . $user . '/' . $repo . '] Failed to updated releases');
         }
 
         // save to cache
@@ -147,9 +171,11 @@ class Fetcher
             $markdown = (isset($result['content'])) ? base64_decode($result['content']) : false;
             // render return markdown
             $info = $this->render($markdown);
+            $this->logger->addInfo('[' . $user . '/' . $repo . '] Updated info');
         }
         catch (\Exception $e) {
             $info = false;
+            $this->logger->addWarning('[' . $user . '/' . $repo . '] Failed to updated info');
         }
 
         // save to cache

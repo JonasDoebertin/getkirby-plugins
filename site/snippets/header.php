@@ -5,7 +5,11 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?= $site->title()->html() ?></title>
+        <?php if (in_array($page->intendedTemplate(), ['home', 'error'])): ?>
+            <title><?= $site->title()->html() ?></title>
+        <?php else: ?>
+            <title><?= $page->title()->html() . ' | ' . $site->title()->html() ?></title>
+        <?php endif ?>
         <meta name="description" content="<?= $site->description()->html() ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 

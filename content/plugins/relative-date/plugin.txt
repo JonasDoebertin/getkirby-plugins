@@ -38,4 +38,12 @@ Authorlink: http://www.distantnative.com/
 
 ----
 
-Repository: https://github.com/distantnative/kirby-relativedate/
+Repository: https://github.com/distantnative/relative-date
+
+----
+
+Text: 
+
+----
+
+Website: 

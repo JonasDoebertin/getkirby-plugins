@@ -34,12 +34,16 @@ Authorname: Nico Hoffmann
 
 ----
 
-Downloadtitle: Documentation
-
-----
-
 Authorlink: http://www.distantnative.com/
 
 ----
 
-Repository: https://github.com/distantnative/kirby-footnotes
+Repository: https://github.com/distantnative/footnotes
+
+----
+
+Text: 
+
+----
+
+Website: 

@@ -1,0 +1,49 @@
+Title: Table
+
+----
+
+Subtitle: Add Tables with Ease
+
+----
+
+Description: Based on Bastian Allgeiers »Columns« plugin, this is a plugin for Kirby CMS that enables n easy syntax in Kirbytext for simple table layouts with formatted content.
+
+----
+
+Text: 
+
+----
+
+Authorname: Julien Gargot
+
+----
+
+Authorlink: http://www.g-u-i.net/
+
+----
+
+Repository: https://github.com/julien-gargot/kirby-plugin-table
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-06-30
+
+----
+
+Icon: panel
+
+----
+
+Type: kirbytext

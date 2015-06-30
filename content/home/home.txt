@@ -6,7 +6,7 @@ Addpluginheading: Add a plugin
 
 ----
 
-Addpluginlead: You know about an awesome plugin or extension for <a href="http://getkirby.com/">Kirby 2</a> that's not listed here?
+Addpluginlead: You know about an awesome plugin or extension for <a href="http://getkirby.com/">Kirby CMS</a> that's not listed here?
 
 ----
 
@@ -18,4 +18,4 @@ Addpluginbutton: Let us know
 
 ----
 
-Introduction: Searching for **plugins & extensions** to pimp up your (link: http://getkirby.com/ text: Kirby 2) powered website? Look no further! **We have everything listed**.
+Introduction: Searching for **plugins & extensions** to pimp up your (link: http://getkirby.com/ text: Kirby CMS) powered website? Look no further! **We have everything listed**.

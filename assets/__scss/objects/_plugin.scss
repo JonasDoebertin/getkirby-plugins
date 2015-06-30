@@ -10,6 +10,8 @@ $plugin-background:             #e3e1e1;
 $plugin-title-color:            $base-heading-color;
 $plugin-subtitle-color:         #525C63;
 
+$twitter-background:            #55acee;
+
 $themes-background:             $base-link-color;
 $themes-title-color:            #ffffff;
 $themes-text-color:             #ffffff;
@@ -20,12 +22,15 @@ $themes-button-color:           #ffffff;
  * #REGULAR PLUGIN
  */
 .plugin {
+    display: block;
     background-color: $plugin-background;
     border-radius: $base-box-round;
     padding: $spacing-unit;
     margin-bottom: $spacing-unit;
     text-align: center;
     position: relative;
+    color: $base-font-color;
+    font-weight: $base-font-weight;
 }
 
     .plugin__icon {
@@ -43,10 +48,7 @@ $themes-button-color:           #ffffff;
         text-transform: uppercase;
         @include font-size(18px);
         margin: 0;
-
-        a {
-            color: $plugin-title-color;
-        }
+        color: $plugin-title-color;
     }
 
     .plugin__subtitle {
@@ -59,6 +61,7 @@ $themes-button-color:           #ffffff;
         @include font-size(14px, false);
         line-height: 14px * 1.25;
         margin-bottom: $spacing-unit / 2;
+        color: $plugin-title-color;
     }
 
     .plugin__description {
@@ -72,7 +75,7 @@ $themes-button-color:           #ffffff;
     }
 
     .plugin__link {
-        margin: 0;
+        margin-bottom: 0;
     }
 
 /**
@@ -119,6 +122,65 @@ $themes-button-color:           #ffffff;
 
     }
 
+}
+
+/**
+ * #TWITTER SPECIAL
+ */
+.plugin--twitter {
+    background-color: $twitter-background;
+    padding: $spacing-unit ($spacing-unit / 2);
+
+    .plugin__icon {
+        margin-bottom: $spacing-unit;
+    }
+
+    .plugin__description {
+        font-size: 0.9em;
+        height: 163px;
+        padding-top: 0.9em;
+
+        a {
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+    }
+
+    .plugin__title,
+    .plugin__subtitle,
+    .plugin__description,
+    .plugin__description a,
+    .plugin__links a {
+        color: $themes-text-color;
+    }
+
+    @include media-query(portable) {
+
+        .plugin__description {
+            @include font-size(18px);
+            height: auto;
+            padding-top: 0;
+
+            a {
+                @include font-size(18px);
+            }
+        }
+    }
+
+    @include media-query(palm) {
+
+        .plugin__description {
+            font-size: 0.9em;
+            height: auto;
+            padding-top: 0;
+
+            a {
+                font-size: 0.9em;
+            }
+        }
+
+    }
 }
 
 /**

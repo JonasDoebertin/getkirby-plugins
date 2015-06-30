@@ -38,4 +38,4 @@ Authorlink: http://www.mundhenk.org
 
 ----
 
-Downloadlink: https://github.com/PhilippMundhenk/Kirby-Table-of-Contents
+Repository: https://github.com/PhilippMundhenk/Kirby-Table-of-Contents

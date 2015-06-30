@@ -38,4 +38,4 @@ Authorlink: http://www.story-pioneers.com/
 
 ----
 
-Downloadlink: https://github.com/storypioneers/kirby-selector
+Repository: https://github.com/storypioneers/kirby-selector

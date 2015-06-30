@@ -34,4 +34,4 @@ Authorlink: http://www.story-pioneers.com/
 
 ----
 
-Downloadlink: https://github.com/storypioneers/kirby-wysiwyg
+Repository: https://github.com/storypioneers/kirby-wysiwyg

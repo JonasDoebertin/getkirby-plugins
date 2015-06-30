@@ -38,4 +38,4 @@ Authorlink: https://github.com/ThiesHagedorn
 
 ----
 
-Downloadlink: https://github.com/ThiesHagedorn/KirbyIconPlugin
+Repository: https://github.com/ThiesHagedorn/KirbyIconPlugin

@@ -38,4 +38,4 @@ Authorlink: http://thomas.fanninger.at/
 
 ----
 
-Downloadlink: https://github.com/fanningert/kirbycms-extension-gmaps
+Repository: https://github.com/fanningert/kirbycms-extension-gmaps

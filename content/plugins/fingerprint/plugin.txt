@@ -42,4 +42,4 @@ Authorlink: http://www.iksi.cc/
 
 ----
 
-Downloadlink: https://github.com/iksi/KirbyFingerprint
+Repository: https://github.com/iksi/KirbyFingerprint

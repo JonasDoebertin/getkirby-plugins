@@ -42,4 +42,4 @@ Authorlink: http://studiodumbar.com/
 
 ----
 
-Downloadlink: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/imgsrc
+Repository: https://github.com/studiodumbar/kirby-extensions/tree/master/plugins/imgsrc

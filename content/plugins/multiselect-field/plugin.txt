@@ -1,0 +1,49 @@
+Title: Multiselect Field
+
+----
+
+Subtitle: Choose Multiple Entries
+
+----
+
+Description: The multiselect field plugin introduces a select field type for the panel that allows you to choose multiple entries.
+
+----
+
+Text: 
+
+----
+
+Authorname: Nico Hoffmann
+
+----
+
+Authorlink: http://www.distantnative.com/
+
+----
+
+Repository: https://github.com/distantnative/multiselect
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-06-30
+
+----
+
+Icon: panel
+
+----
+
+Type: panel

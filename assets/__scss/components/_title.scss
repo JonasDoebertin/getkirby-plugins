@@ -1,0 +1,72 @@
+/**
+ * $TITLE
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$title-section-padding:         2.5 * $spacing-unit;
+$title-section-background:      #e9e6e1;
+$title-headline-color:          $base-heading-color;
+
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--title {
+    background-color: $title-section-background;
+    box-shadow: inset 0px 5px 0px rgba(0, 0, 0, .1);
+}
+
+.section--title .section__wrap {
+    padding: $title-section-padding $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query(desk) {
+        padding: $title-section-padding ($spacing-unit * 5);
+    }
+}
+
+
+/**
+ * #INTRODUCTION
+ */
+.title {}
+
+    .title__headlines {
+        float: left;
+    }
+
+    .title__headline {
+        margin: 0 auto;
+        @include font-size(32px, false);
+        line-height: 1;
+        color: $title-headline-color;
+        font-weight: 600;
+
+        @include media-query(lap-and-up) {
+            @include font-size(32px, false);
+            margin-bottom: $spacing-unit / 8;
+        }
+
+        @include media-query(desk) {
+            @include font-size(48px, false);
+            margin-bottom: $spacing-unit / 4;
+        }
+    }
+
+    .title__subheadline {
+        margin: 0 auto;
+        @include font-size(16px, false);
+        line-height: 1;
+        font-weight: 400;
+
+        @include media-query(lap-and-up) {
+            @include font-size(20px, false);
+        }
+
+        @include media-query(desk) {
+            @include font-size(24px, false);
+        }
+    }

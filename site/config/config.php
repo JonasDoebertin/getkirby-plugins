@@ -32,12 +32,55 @@ c::set('routes', array(
     /*
         SITEMAP
         =======
-        1. Reroute calls to "/sitemap.xml" to "/sitemap"
+        1. Reroute calls to "/sitemap" to "/sitemap.xml"
+        2. Return "/sitemap" when fetching "sitemap.xml"
      */
+    array(
+        'pattern' => 'sitemap',
+        'action'  => function() {
+            go('sitemap.xml');
+        }
+    ),
+
     array(
         'pattern' => 'sitemap.xml',
         'action'  => function() {
             return site()->visit('sitemap');
+        }
+    ),
+
+    /*
+        PLUGIN PAGES
+        ============
+     */
+    // array(
+    //     'pattern' => 'plugins/(:all)',
+    //     'action'  => function($slug) {
+    //         go($slug);
+    //     }
+    // ),
+    array(
+        'pattern' => '(.*)',
+        'action' => function($slug) {
+            
+            // Check for homepage access
+            if (empty($slug) or ($slug === '/')) {
+                return site()->visit('home');
+            }
+
+            // Check if there's a plugin with this slug
+            $plugin = page('plugins')->find($slug);
+            if ($plugin !== false) {
+                return site()->visit('plugins/' . $slug);
+            }
+
+            // Check if there's a page with that slug
+            $page = site()->find($slug);
+            if (($page !== false) and $page->isVisible()) {
+                return site()->visit($slug);
+            }
+
+            return site()->visit('error');
         }
     ),
 

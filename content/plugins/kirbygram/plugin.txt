@@ -38,4 +38,4 @@ Authorlink: https://github.com/PWesterdale
 
 ----
 
-Downloadlink: https://github.com/PWesterdale/KirbyGram
+Repository: https://github.com/PWesterdale/KirbyGram

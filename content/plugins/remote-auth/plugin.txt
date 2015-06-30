@@ -38,4 +38,4 @@ Authorlink: http://sbstjn.com/
 
 ----
 
-Downloadlink: http://sbstjn.com/en/Kirby-OAuth-twitter-connect.html
+Repository: http://sbstjn.com/en/Kirby-OAuth-twitter-connect.html

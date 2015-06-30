@@ -1,0 +1,20 @@
+{
+    "name": "jdpowered/getkirby-plugins",
+    "description": "All Kirby CMS plugins in one place",
+    "require": {
+        "ezyang/htmlpurifier": "~4.6",
+        "knplabs/github-api": "~1.4",
+        "monolog/monolog": "^1.14"
+    },
+    "license": "None",
+    "authors": [
+        {
+            "name": "Jonas Döbertin",
+            "email": "hello@jd-powered.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "preferred-install": "dist"
+    }
+}

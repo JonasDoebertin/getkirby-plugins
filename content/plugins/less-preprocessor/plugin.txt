@@ -1,0 +1,49 @@
+Title: Less Preprocessor
+
+----
+
+Subtitle: Autocompiles LESS Stylesheets
+
+----
+
+Description: This plugin adds a `less()` helper that will automatically compile your LESS stylesheets for you. and is compatible with the »Cachebuster« plugin.
+
+----
+
+Text: 
+
+----
+
+Authorname: Thomas Ghysels
+
+----
+
+Authorlink: https://thomasg.be/
+
+----
+
+Repository: https://github.com/thgh/kirby-plugins/tree/master/less
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-06-30
+
+----
+
+Icon: magic
+
+----
+
+Type: general

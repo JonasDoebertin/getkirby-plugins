@@ -5,11 +5,61 @@ pages:   false
 files:   false
 preview: false
 fields:
+    headline1:
+        label:    Name & Title
+        type:     headline
     title:
         label:    Name
         type:     text
         required: true
         width:    1/2
+    subtitle:
+        label:    Subtitle
+        type:     text
+        required: true
+        width:    1/2
+
+    headline2:
+        label:    Descriptions & Texts
+        type:     headline
+    description:
+        label:    Description
+        type:     textarea
+        required: true
+        buttons:  false
+    text:
+        label:    Main Text
+        type:     markdown
+        header1:  h4
+        header2:  h5
+
+    headline3:
+        label:    Author Information
+        type:     headline
+    authorname:
+        label:    Author Name
+        type:     text
+        required: true
+        width:    1/2
+    authorlink:
+        label:    Author Link
+        type:     url
+        required: true
+        width:    1/2
+    repository:
+        label:    Repository Link
+        type:     url
+        required: false
+        width:    1/2
+    website:
+        label:    Website Link
+        type:     url
+        required: false
+        width:    1/2
+
+    headline4:
+        label:    Settings
+        type:     headline
     draft:
         label:    Draft
         type:     toggle
@@ -17,18 +67,7 @@ fields:
         required: true
         width:    1/4
         default:  true
-    created:
-        label:    Added
-        type:     date
-        format:   MM/DD/YYYY
-        default:  today
-        required: true
-        width:    1/4
-    subtitle:
-        label:    Subtitle
-        type:     text
-        required: true
-        width:    1/2
+        columns:  1
     featured:
         label:    Featured Plugin
         type:     toggle
@@ -36,6 +75,15 @@ fields:
         required: true
         width:    1/4
         default:  false
+        columns:  1
+    created:
+        label:    Added
+        type:     date
+        format:   MM/DD/YYYY
+        default:  today
+        required: true
+        width:    1/4
+        columns:  1
     icon:
         label:    Icon
         type:     select
@@ -73,11 +121,6 @@ fields:
             twitter:    Twitter Logo
             feed:       Feed / RSS
         width:    1/4
-    description:
-        label:    Description
-        type:     textarea
-        width:    3/4
-        required: true
     type:
         label:    Plugin Type
         type:     checkboxes
@@ -87,19 +130,5 @@ fields:
             field:     Page Content
             panel:     Panel Field
             widget:    Panel Widget
-        width:    1/4
-        columns:  1
-    authorname:
-        label:    Author Name
-        type:     text
-        required: true
         width:    1/2
-    authorlink:
-        label:    Author Link
-        type:     url
-        required: true
-        width:    1/2
-    downloadlink:
-        label:    Download Link
-        type:     url
-        required: true
+        columns:  2

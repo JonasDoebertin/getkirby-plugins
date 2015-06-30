@@ -1,0 +1,127 @@
+/**
+ * $INFO
+ */
+
+/**
+ * #LOCAL VARIABLES
+ */
+$info-button-background:            #445467;
+$info-button-background-shade:      #2c3e50;
+$info-button-text-color:            #ffffff;
+$info-button-vertical-padding:      $spacing-unit / 3;
+$info-button-horizontal-padding:    $spacing-unit / 1.5;
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--info {}
+
+.section--info .section__wrap {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query(desk) {
+        padding-left: ($spacing-unit * 5);
+        padding-right: ($spacing-unit * 5);
+    }
+}
+
+/**
+ * #INFO
+ */
+.info {}
+
+    .info__headline{
+        clear: both;
+    }
+
+    .info__description {
+
+        pre {
+            background: white;
+            border-radius: $base-box-round / 2;
+
+            code {
+                padding: 6px 10px;
+                display: block;
+            }
+        }
+    }
+
+    .info__read-more {
+        margin-bottom: $spacing-unit;
+
+        @include media-query(lap-and-up) {
+            margin-bottom: 0;
+        }
+    }
+
+    .report__meta {
+        margin-bottom: $spacing-unit;
+    }
+
+    .info__meta__item {
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        clear: both;
+
+        & + dd {
+            margin: 0;
+        }
+    }
+
+    .info__meta__item--inline {
+        display: inline;
+        float: left;
+
+
+        & + dd {
+            display: inline;
+            float: right;
+            margin-bottom: ($spacing-unit / 2);
+        }
+    }
+
+    .info__button {
+        a {
+            background: $info-button-background;
+            border-radius: $base-box-round;
+            padding: $info-button-vertical-padding $info-button-horizontal-padding;
+            color: $info-button-text-color;
+            box-shadow: 0px 5px 0px $info-button-background-shade;
+            text-align: center;
+            display: block;
+            @include font-size(18px, false);
+            line-height: 1;
+
+            &:hover {
+                background: $info-button-background-shade;
+                box-shadow: 0px 5px 0px shade($info-button-background-shade, 20%);
+            }
+
+            @include media-query(lap-and-up) {
+                @include font-size(14px, false);
+            }
+
+            @include media-query(desk) {
+                @include font-size(16px, false);
+            }
+        }
+    }
+
+    .info__links {
+        list-style: none;
+        text-align: right;
+        font-size: 0.8em;
+        margin: 0;
+
+        li {
+            display: inline;
+        }
+
+        li + li:before {
+            content: '\00A0·\00A0'
+        }
+    }

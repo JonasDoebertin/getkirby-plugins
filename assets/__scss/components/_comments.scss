@@ -1,0 +1,49 @@
+/**
+ * $COMMENTS
+ */
+
+
+/**
+ * #LOCAL VARIABLES
+ */
+$comments-section-padding:         2.5 * $spacing-unit;
+$comments-section-background:      #e9e6e1;
+
+
+/**
+ * #SECTION OVERRIDES
+ */
+.section--comments {
+    background-color: $comments-section-background;
+}
+
+.section--comments .section__wrap {
+    padding: $comments-section-padding $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query(lap-and-up) {
+        padding: $comments-section-padding ($spacing-unit * 5);
+    }
+}
+
+
+/**
+ * #INTRODUCTION
+ */
+.comments {}
+
+    .comments__headline {
+        margin: 0 auto $spacing-unit;
+        @include font-size(20px, false);
+        line-height: 1;
+        color: $base-heading-color;
+        font-weight: 600;
+
+        @include media-query(lap-and-up) {
+            @include font-size(24px, false);
+        }
+
+        @include media-query(desk) {
+            @include font-size(24px, false);
+        }
+    }

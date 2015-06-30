@@ -1,28 +1,23 @@
 
-<article class="[ plugin  js-plugin ]<?= CssClasses::pluginAttributes($plugin) ?>">
-    <a class="plugin__icon" href="<?= $plugin->downloadlink()->html() ?>" rel="nofollow">
-        <i class="icon--<?= $plugin->icon()->html() ?>"></i>
-    </a>
-    <h2 class="plugin__title">
-        <a href="<?= $plugin->downloadlink()->html() ?>" rel="nofollow">
+<article>
+    <a class="[ plugin js-plugin ]<?= CssClasses::pluginAttributes($plugin) ?>" href="<?= url($plugin->uid()) ?>">
+        <span class="plugin__icon">
+            <i class="icon--<?= $plugin->icon()->html() ?>"></i>
+        </span>
+        <h2 class="plugin__title">
             <?= $plugin->title()->html() ?>
-        </a>
-    </h2>
-    <strong class="plugin__subtitle">
-        <?= $plugin->subtitle()->html() ?>
-    </strong>
-    <p class="plugin__author">
-        <a href="<?= $plugin->authorlink()->html() ?>" rel="author nofollow">
+        </h2>
+        <strong class="plugin__subtitle">
+            <?= $plugin->subtitle()->html() ?>
+        </strong>
+        <p class="plugin__author">
             By <?= $plugin->authorname()->html() ?>
-        </a>
-    </p>
-    <p class="plugin__description  js-plugin-description">
-        <?= $plugin->description()->html() ?>
-    </p>
-
-    <p class="plugin__link">
-        <a href="<?= $plugin->downloadlink()->html() ?>" rel="nofollow">
-            Documentation
-        </a>
-    </p>
+        </p>
+        <p class="plugin__description  js-plugin-description">
+            <?= $plugin->description()->html() ?>
+        </p>
+        <p class="plugin__link link">
+            More Info
+        </p>
+    </a>
 </article>

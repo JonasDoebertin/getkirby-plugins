@@ -2,7 +2,7 @@ Title: All Kirby CMS plugins in one place
 
 ----
 
-Description: Searching for plugins & extensions to pimp up your Kirby 2 powered website? Look no further! We have everything listed.
+Description: Searching for plugins & extensions to pimp up your Kirby CMS powered website? Look no further! We have everything listed.
 
 ----
 
@@ -14,7 +14,7 @@ Googleverification: 9-T2RwxqVQBRpT4d-wClmSpkUwxecQn6Irz2ch2KKfw
 
 ----
 
-Heading: Plugins & Extensions for Kirby 2
+Heading: Plugins & Extensions for Kirby CMS
 
 ----
 

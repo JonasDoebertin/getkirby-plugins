@@ -38,7 +38,7 @@ Authorlink: https://github.com/mzur
 
 ----
 
-Downloadlink: https://github.com/mzur/kirby-uniform
+Repository: https://github.com/mzur/kirby-uniform
 
 ----
 

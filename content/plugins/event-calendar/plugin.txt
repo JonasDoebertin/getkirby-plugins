@@ -42,4 +42,4 @@ Authorlink: https://github.com/mzur/kirby-calendar-plugin
 
 ----
 
-Downloadlink: https://github.com/mzur/kirby-calendar-plugin/
+Repository: https://github.com/mzur/kirby-calendar-plugin/

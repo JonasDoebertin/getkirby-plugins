@@ -42,4 +42,4 @@ Authorlink: https://jannikbeyerstedt.de/
 
 ----
 
-Downloadlink: https://github.com/jbeyerstedt/kirby-plugin-thumbExt
+Repository: https://github.com/jbeyerstedt/kirby-plugin-thumbExt

@@ -42,4 +42,4 @@ Authorlink: https://spicyweb.de/
 
 ----
 
-Downloadlink: https://spicyhub.de/spicy-web/kirby-plugin-shariff
+Repository: https://spicyhub.de/spicy-web/kirby-plugin-shariff

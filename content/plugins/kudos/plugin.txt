@@ -42,4 +42,4 @@ Authorlink: http://jerome-arfouche.com/
 
 ----
 
-Downloadlink: https://github.com/hemorej/kirby-kudos
+Repository: https://github.com/hemorej/kirby-kudos

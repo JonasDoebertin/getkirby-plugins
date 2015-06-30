@@ -38,4 +38,4 @@ Authorlink: http://roylodder.com/
 
 ----
 
-Downloadlink: https://github.com/roylodder/kirby-users-field
+Repository: https://github.com/roylodder/kirby-users-field

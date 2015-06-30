@@ -13,13 +13,20 @@ thumbs/*
 # Exclude cache
 site/cache/*
 !site/cache/index.html
+!site/cache/github-api-client/index.html
+!site/cache/github-fetcher-cache/index.html
+
+
+# Exclude logs
+site/logs/*
+!site/logs/index.html
 
 
 ############### Node ###############
 
 # Logs
-logs
-*.log
+/logs
+/*.log
 
 # Runtime data
 pids
@@ -96,3 +103,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+/vendor/

@@ -5,7 +5,11 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?= $site->title()->html() ?></title>
+        <?php if (in_array($page->intendedTemplate(), ['home', 'error'])): ?>
+            <title><?= $site->title()->html() ?></title>
+        <?php else: ?>
+            <title><?= $page->title()->html() . ' | ' . $site->title()->html() ?></title>
+        <?php endif ?>
         <meta name="description" content="<?= $site->description()->html() ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +27,7 @@
 
         <!-- styles -->
         <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Source+Code+Pro:500') ?>
-        <?= css('/assets/css/main.@@1435138134835.css') ?>
+        <?= css('/assets/css/main.@@1435306624796.css') ?>
 
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="<?= url('/assets/images/favicons/apple-touch-icon-57x57.png') ?>">
@@ -58,7 +62,9 @@
             <div class="section__wrap">
 
                 <div class="header__logo">
-                    <img class="logo" src="assets/images/logo.png" width="65" height="65" alt="Plugins &amp; Extensions for Kirby 2">
+                    <a href="<?= $site->url() ?>" rel="index">
+                        <img class="logo" src="<?= url('assets/images/logo.png') ?>" width="65" height="65" alt="Plugins &amp; Extensions for Kirby CMS">
+                    </a>
                 </div>
 
                 <h1 class="header__title"><?= $site->heading()->html() ?></h1>

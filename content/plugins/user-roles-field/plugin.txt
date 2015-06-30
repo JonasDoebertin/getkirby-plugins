@@ -38,4 +38,4 @@ Authorlink: http://roylodder.com/
 
 ----
 
-Downloadlink: https://github.com/roylodder/kirby-roles-field
+Repository: https://github.com/roylodder/kirby-roles-field

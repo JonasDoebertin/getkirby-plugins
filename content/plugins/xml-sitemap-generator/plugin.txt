@@ -1,0 +1,49 @@
+Title: Sitemap.xml Generator
+
+----
+
+Subtitle: Automatic XML Sitemaps
+
+----
+
+Description: This plugin generates a `sitemap.xml` for your site. It's possible to exclude pages from the sitemap and to assign which pages should have the highest priority.
+
+----
+
+Text: 
+
+----
+
+Authorname: Thomas Ghysels
+
+----
+
+Authorlink: https://thomasg.be/
+
+----
+
+Repository: https://github.com/thgh/kirby-plugins/tree/master/sitemap
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-06-30
+
+----
+
+Icon: tags
+
+----
+
+Type: general

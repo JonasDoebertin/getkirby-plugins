@@ -22,12 +22,15 @@ $themes-button-color:           #ffffff;
  * #REGULAR PLUGIN
  */
 .plugin {
+    display: block;
     background-color: $plugin-background;
     border-radius: $base-box-round;
     padding: $spacing-unit;
     margin-bottom: $spacing-unit;
     text-align: center;
     position: relative;
+    color: $base-font-color;
+    font-weight: $base-font-weight;
 }
 
     .plugin__icon {
@@ -45,10 +48,7 @@ $themes-button-color:           #ffffff;
         text-transform: uppercase;
         @include font-size(18px);
         margin: 0;
-
-        a {
-            color: $plugin-title-color;
-        }
+        color: $plugin-title-color;
     }
 
     .plugin__subtitle {
@@ -61,6 +61,7 @@ $themes-button-color:           #ffffff;
         @include font-size(14px, false);
         line-height: 14px * 1.25;
         margin-bottom: $spacing-unit / 2;
+        color: $plugin-title-color;
     }
 
     .plugin__description {
@@ -74,7 +75,7 @@ $themes-button-color:           #ffffff;
     }
 
     .plugin__link {
-        margin: 0;
+        margin-bottom: 0;
     }
 
 /**

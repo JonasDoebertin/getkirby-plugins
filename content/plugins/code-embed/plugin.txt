@@ -42,4 +42,4 @@ Authorlink: http://thomas.fanninger.at/
 
 ----
 
-Downloadlink: https://github.com/fanningert/kirbycms-extension-code
+Repository: https://github.com/fanningert/kirbycms-extension-code

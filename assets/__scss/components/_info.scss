@@ -38,9 +38,14 @@ $info-button-horizontal-padding:    $spacing-unit / 1.5;
 
     .info__description {
 
+        blockquote {
+            padding-left: ($spacing-unit / 1.5);
+            border-left: 4px solid shade($accent-background-color, 5%);
+        }
+
         pre {
             background: white;
-            border-radius: $base-box-round / 2;
+            border-radius: ($base-box-round / 2);
 
             code {
                 padding: 6px 10px;

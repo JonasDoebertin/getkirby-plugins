@@ -1,3 +1,7 @@
+############## Project ###############
+.env
+ngrok
+/vendor/
 
 ############### Kirby2 ###############
 
@@ -12,14 +16,12 @@ thumbs/*
 
 # Exclude cache
 site/cache/*
-!site/cache/index.html
-!site/cache/github-api-client/index.html
-!site/cache/github-fetcher-cache/index.html
-
 
 # Exclude logs
 site/logs/*
 !site/logs/index.html
+
+!.gitkeep
 
 
 ############### Node ###############
@@ -103,5 +105,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-/vendor/

@@ -7,11 +7,23 @@ use V;
 
 class Helper
 {
-
+    /**
+     * RegEx to validate repository urls.
+     */
     const TEST_REPOURL_REGEX = '/https?:\/\/github\.com\/[\w-]+\/[\w-]+(?:\/$|\.git$|$)/i';
 
+    /**
+     * RegEx to extract user and repo information from repository urls.
+     */
     const EXTRACT_INFO_REGEX = '/https?:\/\/github\.com\/(?P<user>[\w-]+)\/(?P<repo>[\w-]+)/i';
 
+    /**
+     * Check if a repository url is valid.
+     *
+     * @method isValidRepository
+     * @param  string $repoUrl
+     * @return boolean
+     */
     public static function isValidRepository($repoUrl)
     {
         // is valid url?

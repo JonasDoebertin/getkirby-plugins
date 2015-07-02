@@ -16,12 +16,26 @@ class Scheduler
      */
     protected static $instance;
 
+    /**
+     * Queue.
+     * @var IronMQ
+     */
     protected $queue;
 
+    /**
+     * Messages.
+     * @var array
+     */
     protected $messages = array();
 
+    /**
+     * Constructor.
+     *
+     * @method __construct
+     */
     public function __construct()
     {
+        // Set up queue
         $this->queue = new IronMQ([
             'token'      => getenv('IRONIO_TOKEN'),
             'project_id' => getenv('IRONIO_PROJECT'),
@@ -69,6 +83,8 @@ class Scheduler
     /**
      * Trigger a complete update of all plugins releases and infos.
      *
+     * This will be triggered by a cronjob every <x> minutes.
+     *
      * @method trigger
      * @return Response
      */
@@ -109,6 +125,14 @@ class Scheduler
         );
     }
 
+    /**
+     * Update a single repositories information.
+     *
+     * This will be triggered by the push queue.
+     *
+     * @method run
+     * @return Response
+     */
     public function run()
     {
         // Security check
@@ -135,23 +159,52 @@ class Scheduler
     }
 
 
+    /**************************************************************************\
+    *                                  QUEUE                                   *
+    \**************************************************************************/
 
-
+    /**
+     * Add a message to be pushed to the queue.
+     *
+     * @method addMessage
+     * @param  string $message
+     */
     protected function addMessage($message)
     {
         $this->messages[] = $message;
     }
 
+    /**
+     * Push all messages to the queue.
+     *
+     * @method pushMessages
+     */
     protected function pushMessages()
     {
         $this->queue->postMessages(getenv('IRONIO_QUEUE'), $this->messages);
     }
 
+    /**
+     * The number of messages to be pushed to the queue.
+     *
+     * @method messagesCount
+     * @return integer
+     */
     protected function messagesCount()
     {
         return count($this->messages);
     }
 
+    /**************************************************************************\
+    *                                REPOSITORY                                *
+    \**************************************************************************/
+
+    /**
+     * Find all valid repositories.
+     *
+     * @method findRepositories
+     * @return array
+     */
     protected function findRepositories()
     {
         // Find all plugin pages containing a repository url
@@ -167,6 +220,4 @@ class Scheduler
 
         return $repositories;
     }
-
-
 }

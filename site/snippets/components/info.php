@@ -12,7 +12,7 @@
                     <div class="info__description">
 
                         <?php if ($info): ?>
-                            <?= $info ?>
+                            <?= $info->text ?>
                         <?php elseif (!$page->text()->empty()): ?>
                             <?= $page->text()->kirbytext() ?>
                         <?php else: ?>

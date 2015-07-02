@@ -152,6 +152,21 @@ class Fetcher
         return true;
     }
 
+    public function outdated($user, $repo)
+    {
+        // Process each metric
+        foreach (['release', 'info'] as $metric) {
+
+            // Check age of stored data
+            $id = $this->generateCacheId($user, $repo, $metric);
+            if ($this->getCacheAge($id) >= (15 * 60)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     protected function fetch($user, $repo, $metric)
     {
         switch ($metric) {

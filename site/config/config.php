@@ -50,19 +50,33 @@ c::set('routes', array(
     ),
 
     /*
+        SCHEDULER
+        =========
+        1. Add /schedule/trigger
+        2. Add /schedule/run
+     */
+    array(
+        'pattern' => 'schedule/trigger',
+        'action'  => function() {
+            return schedule()->trigger();
+        },
+    ),
+    array(
+        'pattern' => 'schedule/run',
+        'action'  => function() {
+            return schedule()->run();
+        },
+        'method' => 'POST',
+    ),
+
+    /*
         PLUGIN PAGES
         ============
      */
-    // array(
-    //     'pattern' => 'plugins/(:all)',
-    //     'action'  => function($slug) {
-    //         go($slug);
-    //     }
-    // ),
     array(
         'pattern' => '(.*)',
         'action' => function($slug) {
-            
+
             // Check for homepage access
             if (empty($slug) or ($slug === '/')) {
                 return site()->visit('home');

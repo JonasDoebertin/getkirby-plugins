@@ -4,7 +4,9 @@
     "require": {
         "ezyang/htmlpurifier": "~4.6",
         "knplabs/github-api": "~1.4",
-        "monolog/monolog": "^1.14"
+        "monolog/monolog": "^1.14",
+        "iron-io/iron_mq": "2.*",
+        "vlucas/phpdotenv": "^2.0"
     },
     "license": "None",
     "authors": [

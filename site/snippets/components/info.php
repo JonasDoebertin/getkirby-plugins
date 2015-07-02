@@ -11,7 +11,7 @@
                     </h3>
                     <div class="info__description">
 
-                        <?php if ($info = github()->info($page->repository())): ?>
+                        <?php if ($info): ?>
                             <?= $info ?>
                         <?php elseif (!$page->text()->empty()): ?>
                             <?= $page->text()->kirbytext() ?>
@@ -41,6 +41,13 @@
                             </a>
                         </dd>
 
+                        <dt class="info__meta__item  info__meta__item--inline">
+                            Added
+                        </dt>
+                        <dd>
+                            <?= date('j M Y', strtotime($page->created())) ?>
+                        </dd>
+
                         <?php if (!$page->repository()->empty()): ?>
                             <dt class="info__meta__item  info__meta__item--inline">
                                 Repo
@@ -67,15 +74,22 @@
                             Version
                         </dt>
                         <dd>
-                            <?php if ($version = github()->release($page->repository())): ?>
-                                <?= $version ?>
+                            <?php if ($release): ?>
+                                <?= $release->version ?>
                             <?php else: ?>
                                 <em>Unknown</em>
                             <?php endif ?>
                         </dd>
-
-                        <dt class="info__meta__item  info__meta__item--inline">Added</dt>
-                        <dd><?= date('j M Y', strtotime($page->created())) ?></dd>
+                        <dt class="info__meta__item  info__meta__item--inline">
+                            Released
+                        </dt>
+                        <dd>
+                            <?php if ($release): ?>
+                                <?= date('j M Y', $release->timestamp) ?>
+                            <?php else: ?>
+                                <em>Unknown</em>
+                            <?php endif ?>
+                        </dd>
 
                         <dt class="info__meta__item  info__meta__item--block">Description</dt>
                         <dd>

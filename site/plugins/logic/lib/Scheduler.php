@@ -107,7 +107,7 @@ class Scheduler
         // and push it to the queue
         foreach ($repositories as $repository) {
             $info = Helper::extract($repository);
-            if ($info !== false) {
+            if (($info !== false) and \fetch()->outdated($info['user'], $info['repo'])) {
                 $this->addMessage(new Message(
                     $info['user'],
                     $info['repo']

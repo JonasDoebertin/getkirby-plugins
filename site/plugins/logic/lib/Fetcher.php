@@ -286,6 +286,7 @@ class Fetcher
         $config->set('HTML.Allowed', 'a[href|target|rel|id],strong,b,em,i,strike,pre,code[class],p,ol,ul,li,br,h1,h2,h3,h4,h5,h6,img[src|alt],blockquote');
         $config->set('HTML.Nofollow', true);
         $config->set('Attr.AllowedRel', 'nofollow');
+        $config->set('Cache.SerializerPath', kirby()->roots()->cache() . DS . 'html-purifier');
 
         $purifier = new HTMLPurifier($config);
         $safe = $purifier->purify($unsafe);

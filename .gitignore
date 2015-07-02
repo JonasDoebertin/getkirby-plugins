@@ -16,12 +16,19 @@ thumbs/*
 
 # Exclude cache
 site/cache/*
+!site/cache/.gitkeep
+
+!site/cache/fetcher
+site/cache/fetcher/*
+!site/cache/fetcher/.gitkeep
+
+!site/cache/github-client
+site/cache/github-client/*
+!site/cache/github-client/.gitkeep
 
 # Exclude logs
 site/logs/*
-!site/logs/index.html
-
-!.gitkeep
+!site/logs/.gitkeep
 
 
 ############### Node ###############

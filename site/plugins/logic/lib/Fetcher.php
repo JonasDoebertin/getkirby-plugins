@@ -1,10 +1,13 @@
 <?php
 
-namespace jdpowered\Github;
+namespace jdpowered\GetKirbyPlugins\Logic;
 
 use Cache;
 use HTMLPurifier;
 use HTMLPurifier_Config;
+use jdpowered\GetKirbyPlugins\Logic\Helper;
+use jdpowered\GetKirbyPlugins\Logic\Structures\Info;
+use jdpowered\GetKirbyPlugins\Logic\Structures\Release;
 use Monolog\Logger;
 use Monolog\Handler\RotatingFileHandler;
 use Parsedown;
@@ -14,11 +17,7 @@ use V;
 class Fetcher
 {
 
-    const TEST_REPOURL_REGEX = '/https?:\/\/github\.com\/[\w-]+\/[\w-]+(?:\/$|\.git$|$)/i';
 
-    const EXTRACT_INFO_REGEX = '/https?:\/\/github\.com\/(?P<user>[\w-]+)\/(?P<repo>[\w-]+)/i';
-
-    const CACHE_LIFETIME = 60;
 
     /**
      * The *singleton* instance of this class.
@@ -47,21 +46,27 @@ class Fetcher
         // Set up API client
         $this->client = new \Github\Client(
             new \Github\HttpClient\CachedHttpClient(array(
-                'cache_dir' => kirby()->roots()->cache() . DS . 'github-api-client',
+                'cache_dir' => kirby()->roots()->cache() . DS . 'github-client',
                 'timeout'   => 3,
             ))
+        );
+        $this->client->authenticate(
+            getenv('GITHUB_USERNAME'),
+            getenv('GITHUB_TOKEN'),
+            \Github\Client::AUTH_HTTP_PASSWORD
         );
 
         // Set up cache
         $this->cache = Cache::setup('File', array(
-            'root' => kirby()->roots()->cache() . DS . 'github-fetcher-cache',
+            'root' => kirby()->roots()->cache() . DS . 'fetcher',
         ));
 
         // Set up logger
         $this->logger = new Logger('log');
         $this->logger->pushHandler(new RotatingFileHandler(
             kirby()->roots()->site() . DS . 'logs' . DS . 'fetcher.log',
-            14
+            14,
+            Logger::WARNING
         ));
     }
 
@@ -83,8 +88,6 @@ class Fetcher
         return static::$instance;
     }
 
-
-
     /**
      * Private clone method to prevent cloning of the instance of the
      * *Singleton* instance.
@@ -102,8 +105,64 @@ class Fetcher
     private function __wakeup() {}
 
     /**************************************************************************\
-    *                                PUBLIC API                                *
+    *                               FRONTEND API                               *
     \**************************************************************************/
+
+    public function cached($metric, $repoUrl)
+    {
+        // Extract user and repo info
+        $info = Helper::extract($repoUrl);
+        if ($info === false) {
+            return false;
+        }
+        $user = $info['user'];
+        $repo = $info['repo'];
+
+        // Check for stored data, return if available
+        $id = $this->generateCacheId($user, $repo, $metric);
+        if (($data = $this->loadFromCache($id)) !== null) {
+            return $data;
+        }
+
+        return false;
+    }
+
+    /**************************************************************************\
+    *                               BACKEND API                                *
+    \**************************************************************************/
+
+    public function preload($user, $repo)
+    {
+        // Process each metric
+        foreach (['release', 'info'] as $metric) {
+
+            // Check age of stored data
+            $id = $this->generateCacheId($user, $repo, $metric);
+            if ($this->getCacheAge($id) >= (15 * 60)) {
+
+                // Delegate to specific fetcher method
+                $this->logger->addInfo('Updating ' .$metric. ' info for [' . $user . '/' . $repo . ']...');
+                $data = $this->fetch($user, $repo, $metric);
+
+                // Cache data
+                $this->saveToCache($id, $data);
+            }
+        }
+
+        return true;
+    }
+
+    protected function fetch($user, $repo, $metric)
+    {
+        switch ($metric) {
+            case 'release':
+                return $this->fetchRelease($user, $repo);
+            case 'info':
+                return $this->fetchInfo($user, $repo);
+            default:
+                return false;
+        }
+    }
 
     /**
      * Get the latest release from Github.
@@ -113,73 +172,47 @@ class Fetcher
      * @param  string $repoUrl
      * @return string|boolean
      */
-    public function release($repoUrl)
+    protected function fetchRelease($user, $repo)
     {
-        // extract user and repo info
-        $info = $this->extract($repoUrl);
-        if ($info === false) {
-            return false;
-        }
-        $user = $info['user'];
-        $repo = $info['repo'];
-
-        // check for stored data, return if available
-        $id = md5($user . $repo . 'release');
-        if (($release = $this->loadFromCache($id)) !== null) {
-            return $release;
-        }
-
-        // fetch from API, return false if unsuccessful
-        // TODO: use push queue to update data
         try {
-            $this->client->clearHeaders();
+            // Fetch from API and build transfer object
             $result = $this->client->api('repo')->releases()->latest($user, $repo);
-            $release = (isset($result['tag_name'])) ? $result['tag_name'] : false;
-            $this->logger->addInfo('[' . $user . '/' . $repo . '] Updated releases');
+            $release = new Release($result['tag_name'], strtotime($result['published_at']));
+
+            // Log event
+            $this->logger->addInfo('Updated release info for [' . $user . '/' . $repo . ']');
         }
         catch (\Exception $e) {
+            // Catch unsuccessful API requests
             $release = false;
-            $this->logger->addWarning('[' . $user . '/' . $repo . '] Failed to updated releases');
-        }
 
-        // save to cache
-        $this->saveToCache($id, $release);
+            // Log event
+            $this->logger->addWarning('Failed to update release info for [' . $user . '/' . $repo . ']', ['message' => $e->getMessage()]);
+        }
 
         return $release;
     }
 
-    public function info($repoUrl)
+    public function fetchInfo($user, $repo)
     {
-        // extract user and repo info
-        $info = $this->extract($repoUrl);
-        if ($info === false) {
-            return false;
-        }
-        $user = $info['user'];
-        $repo = $info['repo'];
-
-        // check for stored data, return if available
-        $id = md5($user . $repo . 'info');
-        if (($info = $this->loadFromCache($id)) !== null) {
-            return $info;
-        }
-
-        // fetch from API, return false if unsuccessful
         try {
-            $this->client->clearHeaders();
+            // Fetch from API
             $result = $this->client->api('repo')->contents()->show($user, $repo, 'PLUGIN_INFO.md');
-            $markdown = (isset($result['content'])) ? base64_decode($result['content']) : false;
-            // render return markdown
-            $info = $this->render($markdown);
-            $this->logger->addInfo('[' . $user . '/' . $repo . '] Updated info');
+
+            // Decode & render markdown and build transfer object
+            $markdown = base64_decode($result['content']);
+            $info = new Info($this->render($markdown));
+
+            // Log event
+            $this->logger->addInfo('Updated info text for [' . $user . '/' . $repo . ']');
         }
         catch (\Exception $e) {
+            // Catch unsuccessful API requests
             $info = false;
-            $this->logger->addWarning('[' . $user . '/' . $repo . '] Failed to updated info');
-        }
 
-        // save to cache
-        $this->saveToCache($id, $info);
+            // Log event
+            $this->logger->addWarning('Failed to update info text for [' . $user . '/' . $repo . ']', ['message' => $e->getMessage()]);
+        }
 
         return $info;
     }
@@ -189,70 +222,23 @@ class Fetcher
     \**************************************************************************/
 
     /**
-     * Extract user and repository name from github.com repository url.
+     * Generate a cache ID based on repo, user & metric.
      *
-     * @method extract
-     * @since  1.0.0
-     * @param  string $repoUrl
-     * @return array|boolean
+     * @method generateCacheId
+     * @param  string $user
+     * @param  string $repo
+     * @param  string $metric
+     * @return string
      */
-    protected function extract($repoUrl)
+    protected function generateCacheId($user, $repo, $metric)
     {
-        // validate url
-        if (!$this->isValidRepository($repoUrl)) {
-            return false;
-        }
-
-        // execute regular expression
-        $matches = array();
-        if (preg_match(self::EXTRACT_INFO_REGEX, $repoUrl, $matches) !== 1) {
-            return false;
-        }
-
-        //validate matches
-        if (!isset($matches['user']) or !isset($matches['repo'])) {
-            return false;
-        }
-
-        return array(
-            'user' => $matches['user'],
-            'repo' => $matches['repo'],
-        );
-    }
-
-    /**
-     * Check if a given url is a valid github.com repository url.
-     *
-     * @method isValidRepository
-     * @since  1.0.0
-     * @param  string  $repoUrl
-     * @return boolean
-     */
-    protected function isValidRepository($repoUrl)
-    {
-        // is valid url?
-        if (!V::url($repoUrl)) {
-            return false;
-        }
-
-        // is github.com link url?
-        if (Url::host($repoUrl) !== 'github.com') {
-            return false;
-        }
-
-        // is actual repo root url?
-        if (preg_match(self::TEST_REPOURL_REGEX, $repoUrl) !== 1) {
-            return false;
-        }
-
-        return true;
+        return md5($user . $repo . $metric);
     }
 
     /**
      * Try to load data from cache.
      *
      * @method loadFromCache
-     * @since  1.0.0
      * @param  string $id
      * @return mixed
      */
@@ -265,20 +251,24 @@ class Fetcher
      * Save data to cache.
      *
      * @method saveToCache
-     * @since  1.0.0
      * @param  string $id
      * @param  mixed  $payload
      */
     protected function saveToCache($id, $payload)
     {
-        $this->cache->set($id, $payload, self::CACHE_LIFETIME);
+        $this->cache->set($id, $payload, null);
+    }
+
+    protected function getCacheAge($id)
+    {
+        $created = $this->cache->created($id);
+        return (time() - $created);
     }
 
     /**
      * Clean up and render markdown code.
      *
      * @method render
-     * @since  1.0.0
      * @param  string $markdown
      * @return string
      */
@@ -293,9 +283,10 @@ class Fetcher
         // purify html
         $config = HTMLPurifier_Config::createDefault();
         $config->set('URI.Host', Url::host(site()->url()));
-        $config->set('HTML.Allowed', 'a[href|target|rel|id],strong,b,em,i,strike,pre,code[class],p,ol,ul,li,br,h1,h2,h3,h4,h5,h6,img[src|alt]');
+        $config->set('HTML.Allowed', 'a[href|target|rel|id],strong,b,em,i,strike,pre,code[class],p,ol,ul,li,br,h1,h2,h3,h4,h5,h6,img[src|alt],blockquote');
         $config->set('HTML.Nofollow', true);
         $config->set('Attr.AllowedRel', 'nofollow');
+        $config->set('Cache.SerializerPath', kirby()->roots()->cache() . DS . 'html-purifier');
 
         $purifier = new HTMLPurifier($config);
         $safe = $purifier->purify($unsafe);
@@ -307,7 +298,6 @@ class Fetcher
      * Change header levels so that only header 4, 5 & 6 are used.
      *
      * @method modifyHeaderLevels
-     * @since  1.0.0
      * @param  string $markdown
      * @return string
      */
@@ -335,7 +325,6 @@ class Fetcher
      * Check if a header level is used in the markdown code.
      *
      * @method isHeaderLevelUsed
-     * @since  1.0.0
      * @param  string  $markdown
      * @param  integer $level
      * @return boolean
@@ -349,7 +338,6 @@ class Fetcher
      * Replace a header level with another one.
      *
      * @method replaceHeaderLevel
-     * @since  1.0.0
      * @param  string  $haystack
      * @param  integer $needle
      * @param  integer $replacement

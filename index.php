@@ -2,10 +2,12 @@
 
 define('DS', DIRECTORY_SEPARATOR);
 
-/*
-    Load dependencies
- */
+// Load composer dependencies
 require __DIR__ . DS .'vendor' . DS . 'autoload.php';
+
+// Load environment variables
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
 
 /*
     Load Kirby core and boot up the cms

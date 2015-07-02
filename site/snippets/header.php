@@ -27,7 +27,7 @@
 
         <!-- styles -->
         <?= css('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Source+Code+Pro:500') ?>
-        <?= css('/assets/css/main.@@1435306624796.css') ?>
+        <?= css('/assets/css/main.@@1435761165910.css') ?>
 
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="<?= url('/assets/images/favicons/apple-touch-icon-57x57.png') ?>">

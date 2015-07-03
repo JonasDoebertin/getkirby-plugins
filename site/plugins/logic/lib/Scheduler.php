@@ -181,7 +181,9 @@ class Scheduler
      */
     protected function pushMessages()
     {
-        $this->queue->postMessages(getenv('IRONIO_QUEUE'), $this->messages);
+        if ($this->messagesCount() > 0) {
+            $this->queue->postMessages(getenv('IRONIO_QUEUE'), $this->messages);
+        }
     }
 
     /**

@@ -1,0 +1,5 @@
+Title: Latest Plugins & Extensions
+
+----
+
+Rootpage: plugins

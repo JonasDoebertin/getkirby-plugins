@@ -10,8 +10,8 @@
         <?php foreach($items as $item): ?>
             <item>
                 <title><?= xml($item->title()) ?></title>
-                <link><?= xml(url('/') . '#' . $item->uid()) ?></link>
-                <guid><?= xml($item->uid()) ?></guid>
+                <link><?= xml($link . '/' . $item->uid()) ?></link>
+                <guid><?= xml($link . '/' . $item->uid()) ?></guid>
                 <pubDate><?= $item->date('r', 'created') ?></pubDate>
                 <description>
                     <![CDATA[

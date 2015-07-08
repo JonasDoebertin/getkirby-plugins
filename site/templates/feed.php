@@ -5,10 +5,7 @@
     ================
     1. Get all visible plugins
  */
-$plugins = $pages
-    ->find('plugins')->children()
-    ->filterBy('draft', 'false')
-    ->sortBy('created', 'desc');
+$items = $page->rootpage()->toPage()->children()->filterBy('draft', 'false');
 
 
 /*
@@ -16,9 +13,9 @@ $plugins = $pages
     =================
     1. Send feed markup
  */
-echo $plugins->feed(array(
-  'title'       => 'Latest Plugins & Extensions',
+echo $items->feed(array(
+  'title'       => $page->title()->html(),
   'link'        => url('/'),
-  'url'         => url('/feed'),
+  'url'         => $page->url(),
   'datefield'   => 'created',
 ));

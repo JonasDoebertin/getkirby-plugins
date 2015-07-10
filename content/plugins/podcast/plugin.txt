@@ -38,4 +38,12 @@ Authorlink: http://www.maurice-renck.de
 
 ----
 
-Repository: https://www.maurice-renck.de/en/projects/kirby-podcast-plugin
+Repository: https://github.com/mauricerenck/kirby-podcast/
+
+----
+
+Text: 
+
+----
+
+Website: https://www.maurice-renck.de/en/projects/kirby-podcast-plugin

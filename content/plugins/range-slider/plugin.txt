@@ -1,0 +1,49 @@
+Title: Range Slider
+
+----
+
+Subtitle: Intuitive and Mobile-Ready Range Slider
+
+----
+
+Description: This additional Panel field for Kirby 2 enables you to use an intuitive and visual range slider without any hazzle. It's mobile ready and fully responsive, too!
+
+----
+
+Text: 
+
+----
+
+Authorname: Jonas Döbertin
+
+----
+
+Authorlink: http://jd-powered.net
+
+----
+
+Repository: https://github.com/JonasDoebertin/kirby-range-slider
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: panel
+
+----
+
+Type: panel

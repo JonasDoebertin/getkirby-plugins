@@ -14,7 +14,7 @@ Subtitle: Easy CDN
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 
@@ -84,3 +84,7 @@ Enabling the CDN option for thumbnails might easily eat up your storage limit on
 #### Tested
 
 This plugin has so far only been tested with (link: http://keycdn.com text: keycdn.com). Please let me know if you run into any issues with other CDNs and feel free to submit improvements.
+
+----
+
+Website: 

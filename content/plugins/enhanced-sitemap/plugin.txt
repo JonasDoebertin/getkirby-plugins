@@ -1,0 +1,49 @@
+Title: Enhanced Sitemap
+
+----
+
+Subtitle: More Options for your Sitemaps
+
+----
+
+Description: This enhanced sitemap plugin comes with some handy features the original sitemap extension is missing and offers a visitor facing sitemap as well.
+
+----
+
+Text: 
+
+----
+
+Authorname: Jannik Beyerstedt
+
+----
+
+Authorlink: http://jannikbeyerstedt.de/
+
+----
+
+Repository: https://github.com/jbeyerstedt/kirby-template-sitemap
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: markup
+
+----
+
+Type: general

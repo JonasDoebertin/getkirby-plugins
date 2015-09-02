@@ -1,0 +1,49 @@
+Title: Auto Publish
+
+----
+
+Subtitle: Make new Pages Visible by Default
+
+----
+
+Description: Extends Kirby 2.1 with the possibility to auto publish pages that are created with the Kirby Admin Panel. By default new pages are invisible on creation. This plugin allows you to make all new pages or certain types of pages visible by default.
+
+----
+
+Text: 
+
+----
+
+Authorname: Gunther Groenewege
+
+----
+
+Authorlink: http://g-design.net/
+
+----
+
+Repository: https://github.com/groenewege/kirby-auto-publish
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: panel
+
+----
+
+Type: general

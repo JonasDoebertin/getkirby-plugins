@@ -1,0 +1,88 @@
+Title: Shopkit
+
+----
+
+Subtitle: Comprehensive eCommerce Solution
+
+----
+
+Description: Shopkit offers a comprehensive list of features such as multiple shipping options, PayPal integration, order management, user account management and much more…
+
+----
+
+Text: 
+
+# Shopkit for Kirby
+
+Shopkit is a comprehensive commerce solution for the excellent Kirby CMS.
+
+Docs and license purchasing: <http://shopkit.samnabi.com>
+
+## Features
+
+- Shop options
+    - Multiple shipping tiers
+        - Free shipping for specific products
+        - Apply to specific countries
+        - Four shipping calculation methods
+            - Flat rate
+            - Rate per item
+            - Rate by weight
+            - Rate by total price
+    - Multiple tax rates (by country)
+- Products
+    - Photo gallery
+    - Description and tags
+    - Related products
+    - Unlimited price variants per product (e.g. for different product sizes)
+    - Options within each price variant (e.g. for product colours)
+    - Override tax and shipping rules
+- Purchasing
+    - Paypal integration
+    - Allow certain user roles to pay later
+- Order management
+    - View pending and shipped orders
+    - Download PDF invoice of each order
+- User account management
+    - No account needed to purchase
+    - Users can log in to view order status and save PDF invoices
+- Browsing
+    - Unlimited shop categories and sub-categories
+    - Smart templates and blueprints to handle complex navigation
+    - Search
+
+----
+
+Authorname: Sam Nabi
+
+----
+
+Authorlink: http://samnabi.com/
+
+----
+
+Repository: https://github.com/samnabi/shopkit
+
+----
+
+Website: http://shopkit.samnabi.com/
+
+----
+
+Draft: false
+
+----
+
+Featured: true
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: payment
+
+----
+
+Type: general

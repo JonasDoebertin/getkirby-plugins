@@ -1,0 +1,49 @@
+Title: Task List
+
+----
+
+Subtitle: Github-styled Task Lists
+
+----
+
+Description: Extend Kirby with some basic and extremely easy to use task-list formatting. This plugin enables the inclusion of Github style task lists in Kirbytext content.
+
+----
+
+Text: 
+
+----
+
+Authorname: Gunther Groenewege
+
+----
+
+Authorlink: http://g-design.net/
+
+----
+
+Repository: https://github.com/groenewege/kirby-task-list
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: formatting
+
+----
+
+Type: kirbytext

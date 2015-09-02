@@ -1,0 +1,49 @@
+Title: KirbytextRaw
+
+----
+
+Subtitle: Kirbytext without the Paragraph Tags
+
+----
+
+Description: Sometimes it is necessary to get some text parsed as Kirbytext, but without the p-tags added. Here is the plugin for this problem.
+
+----
+
+Text: 
+
+----
+
+Authorname: Jannik Beyerstedt
+
+----
+
+Authorlink: http://jannikbeyerstedt.de/
+
+----
+
+Repository: https://github.com/jbeyerstedt/kirby-plugin-kirbytextRaw
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: markup
+
+----
+
+Type: general, kirbytext

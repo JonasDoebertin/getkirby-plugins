@@ -1,0 +1,49 @@
+Title: Download Tag
+
+----
+
+Subtitle: Generate Beautiful Download Link
+
+----
+
+Description: This Kirbytag returns a beautiful download-link for a specific file in your site's content. It generates a link with a customizable text and displays the filesize.
+
+----
+
+Text: 
+
+----
+
+Authorname: Jannik Beyerstedt
+
+----
+
+Authorlink: http://jannikbeyerstedt.de/
+
+----
+
+Repository: https://github.com/jbeyerstedt/kirby-kirbytag-download
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: link
+
+----
+
+Type: kirbytext

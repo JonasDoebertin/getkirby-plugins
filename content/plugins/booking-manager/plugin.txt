@@ -1,0 +1,49 @@
+Title: Booking Manager
+
+----
+
+Subtitle: Recieve and Manage Bookings
+
+----
+
+Description: Receive and manage bookings right from your Kirby powered website. Can be used for hotel room bookings or restaurant reservations as well as any other, time-related service.
+
+----
+
+Text: 
+
+----
+
+Authorname: Acrontum GmbH
+
+----
+
+Authorlink: http://www.acrontum.de/
+
+----
+
+Repository: https://github.com/acrontum/kirby-booking-manager-plugin
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: calendar
+
+----
+
+Type: general

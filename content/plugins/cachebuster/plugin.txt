@@ -14,7 +14,7 @@ Subtitle: Automate JS and CSS Cache Busting
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 
@@ -66,3 +66,7 @@ location /assets {
   }
 }
 ```
+
+----
+
+Website: 

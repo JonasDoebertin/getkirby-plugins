@@ -1,0 +1,49 @@
+Title: CartKit
+
+----
+
+Subtitle: Shopping Cart with PayPal
+
+----
+
+Description: This special starterkit allows you to build a simple Kirby powered ecommerce website complete with PayPal integration.
+
+----
+
+Text: 
+
+----
+
+Authorname: Christopher Boutillé
+
+----
+
+Authorlink: http://www.dsply.fr/
+
+----
+
+Repository: https://github.com/dsply/Cartkit
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: payment
+
+----
+
+Type: general

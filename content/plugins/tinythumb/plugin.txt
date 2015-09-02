@@ -1,0 +1,49 @@
+Title: tinyThumb
+
+----
+
+Subtitle: Auto-Compressed Thumbnails
+
+----
+
+Description: Compress your auto-generated thumbnails with TinyPNG on the fly.
+
+----
+
+Text: 
+
+----
+
+Authorname: Jens Törnell
+
+----
+
+Authorlink: https://github.com/jenstornell
+
+----
+
+Repository: https://github.com/jenstornell/Kirby-tinyThumb
+
+----
+
+Website: 
+
+----
+
+Draft: false
+
+----
+
+Featured: false
+
+----
+
+Created: 2015-09-02
+
+----
+
+Icon: image
+
+----
+
+Type: general, field

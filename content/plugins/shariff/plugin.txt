@@ -34,12 +34,16 @@ Authorname: Michael Fürmann
 
 ----
 
-Downloadtitle: Documentation
-
-----
-
 Authorlink: https://spicyweb.de/
 
 ----
 
-Repository: https://spicyhub.de/spicy-web/kirby-plugin-shariff
+Repository: https://github.com/SpicyWeb-de/kirby-plugin-shariff
+
+----
+
+Text: 
+
+----
+
+Website: 
